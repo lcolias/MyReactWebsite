@@ -1,3 +1,9 @@
+# My First React App
+
+This React project is meant to serve as my personal website as well as a tool for increasing my understanding of web development.
+A link to my website is provided here [lukecolias.com]().
+This website is hosted with []().
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
