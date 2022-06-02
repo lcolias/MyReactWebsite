@@ -17,7 +17,18 @@ function Home(props){
 */
     return(
         <>
-            <h1>Howdy y'all, I'm {props.name}</h1>
+            <div>
+                <h1>Howdy y'all, I'm {props.name}</h1>
+
+                <h2>Software Engineer and Shrewd Scalawag</h2>
+            </div>
+            
+            <div className=''>
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="50"/>
+                </svg>
+            </div>
+            <img/>
             <h2>Right now im: {emotion} and {secondary}</h2>
             <button onClick={() => setEmotion("happy")}>
                 Make Happy
