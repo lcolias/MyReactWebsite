@@ -7,14 +7,14 @@ function Home(props){
     const [emotion, setEmotion] = useState("happy");
     const [secondary, setSecondary] = useState("tired");
 
-    useEffect(() => {
+   /* useEffect(() => {
         console.log(`It's ${emotion} around here!`);
     }, [emotion]); 
     
     useEffect(() => {
         console.log(`Its ${secondary} around here!`); 
     }, [secondary]);
-
+*/
     return(
         <>
             <h1>Howdy y'all, I'm {props.name}</h1>

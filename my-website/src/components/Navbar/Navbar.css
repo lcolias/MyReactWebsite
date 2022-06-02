@@ -1,3 +1,15 @@
+/*Base Styling*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: transparent;
+    padding: 0 15px;
+}
+
 .navbar {
     
 }
@@ -7,6 +19,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
+}
+
+.navbar-container li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.toggle {
+    order: 1;
 }
 
 .navbar-logo {
@@ -16,6 +38,19 @@
 
 .navbar-link {
     padding: 10px;
+
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .navbar-link {
+    display: block;
+}
+
+.button-secondary {
+    border-bottom: 1px #444 solid;
 }
 
 .navbar-link:not(.button) a:hover,
@@ -23,6 +58,3 @@
     color: #ccc;
 }
 
-.icon {
-
-}

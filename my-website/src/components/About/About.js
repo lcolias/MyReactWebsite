@@ -11,7 +11,11 @@ function About() {
 
     return(
         <>
-            <h1>About Page!</h1>
+            <h1>I've never been one for comprehensively cocky characterizations of myself... </h1>
+            <h3>... but a little bit of flashiness never hurt nobody  </h3>
+
+
+            
             <label htmlFor="checkbox">{checked ? "Checked" : "Not Checked"}</label>
             <input 
                 id="checkbox"
