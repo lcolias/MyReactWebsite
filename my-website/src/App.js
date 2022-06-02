@@ -9,6 +9,7 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Funstuff from './components/Fun-Stuff/Funstuff';
 import Contact from './components/Contact/Contact';
+import Secret from './components/Secret/Secret';
 import Whoops404 from './components/ErrorPage/Whoops404';
 
 function Splash(props) {
@@ -37,6 +38,7 @@ function App(props) {
             <Route path="/skills" element={<Skills login="lcolias"/>}/>
             <Route path="/funstuff" element={<Funstuff />}/>
             <Route path="/contact" element={<Contact />}/>
+            <Route path="/secret" element={<Secret />}/>
             <Route path="*" element={<Whoops404 />} />
           </Routes>
         </div>
