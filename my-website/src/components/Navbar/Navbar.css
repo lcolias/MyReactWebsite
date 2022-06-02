@@ -24,7 +24,7 @@ nav {
 
 .navbar-container li a {
     display: block;
-    padding: 15px 5px;
+    padding: 20px 5px;
 }
 
 .toggle {
@@ -37,17 +37,27 @@ nav {
 }
 
 .navbar-link {
-    padding: 10px;
-
     order: 3;
     width: 100%;
-    text-align: center;
+    text-align: left;
     display: none;
 }
+
+
 
 .active .navbar-link {
     display: block;
 }
+
+.active .navbar-link a svg{
+    box-sizing: content-box;
+    padding-right: 4px;
+    display: inline;
+}
+
+
+
+
 
 .button-secondary {
     border-bottom: 1px #444 solid;
