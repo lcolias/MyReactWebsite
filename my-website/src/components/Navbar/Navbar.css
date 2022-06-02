@@ -34,16 +34,16 @@ nav {
 .navbar-logo {
     font-size: large;
     padding: 7.5px 10px 7.5px 0;
+    text-align: left;
 }
 
 .navbar-link {
+    font-size: large;
     order: 3;
     width: 100%;
     text-align: left;
     display: none;
 }
-
-
 
 .active .navbar-link {
     display: block;
@@ -55,10 +55,6 @@ nav {
     display: inline;
 }
 
-
-
-
-
 .button-secondary {
     border-bottom: 1px #444 solid;
 }
@@ -68,3 +64,46 @@ nav {
     color: #ccc;
 }
 
+/*Tablet min-width*/
+@media all and (min-width: 700px) {
+    .navbar-container {
+        justify-content: center;
+    }
+    .navbar-logo {
+        flex: 1;
+    }
+  
+    .toggle {
+        text-align: right;
+        order: 2;
+    }
+
+}
+
+
+@media all and (min-width: 960px){
+    .navbar-container {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .navbar-logo {
+        order: 0;
+    }
+
+    .navbar-link {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .navbar-link a svg{
+        display: inline;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
