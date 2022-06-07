@@ -5,6 +5,7 @@ import "./Home.css";
 
 import Navbar from '../Navbar/Navbar';
 
+//Animation Variables
 const DURATION = 3000;
 
 const blobs = [
@@ -19,13 +20,17 @@ function Home(props){
 
     const [emotion, setEmotion] = useState("happy");
     const [secondary, setSecondary] = useState("tired");
+
+    //  State of blob path
     const [activeIndex, setActiveIndex] = useState(0);
 
+    //  Animation Properties
     const animationProps = useSpring({
        blob: blobs[activeIndex],
        config: {duration:DURATION} 
     });
     
+    // React Hook that tracks change of the blobs path property
     useEffect(() => {
         const timeout = setTimeout(() => {
             setActiveIndex(activeIndex + 1);            
@@ -49,21 +54,13 @@ function Home(props){
 */
     return(
         <>
-            <div className='main-container'>
+            <section className='main-container'>
+                
                 <Navbar />
-                
-                <div className='intro'>
-                    <h1>Howdy y'all, I'm {props.name}</h1>
 
-                    <h2>Software Engineer and Shrewd Scalawag</h2>
-                </div>
-                
-                <div className=''>
                 <svg 
-                    id="visual" 
+                    className='blob pos1'
                     viewBox="0 0 900 600" 
-                    width="900" 
-                    height="600" 
                     xmlns="http://www.w3.org/2000/svg" 
                     version="1.1">
                         
@@ -76,23 +73,15 @@ function Home(props){
                             /> 
                         </g>                        
                 </svg>
-            
+                
+                <div className='content'>
+                    <h1>Howdy y'all, I'm {props.name}</h1>
+
+                    <h2>Software Engineer and Shrewd Scalawag</h2>
                 </div>
                 
-                <h2>Right now im: {emotion} and {secondary}</h2>
-                <button onClick={() => setEmotion("happy")}>
-                    Make Happy
-                </button>
-                <button onClick={() => setSecondary("Crabby")}> 
-                    Make Crabby
-                </button>    
-                <button onClick={() => setEmotion("frustrated")}>
-                    Frustrate
-                </button>
-                <button onClick={() => setEmotion("enthusiastic")}>
-                    Enthuse
-                </button>
-            </div>
+            
+            </section>
         </>
     );
 }

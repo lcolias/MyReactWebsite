@@ -2,6 +2,24 @@
     
 }
 
-.intro {
+.main-container .blob{
+    width: 50%;
+    height: 100%;
 
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.pos1 {
+    top: -5%;
+    left: -20%;
+    scale: 2;
+}
+
+
+.content {
+
+    position: absolute;
+    z-index: 2;
 }
