@@ -65,6 +65,69 @@ function Skills({ login }){
       <>
           <h1>Skills Page!</h1>
           <div>No User Available</div>
+          {/*<svg 
+                    className='blob pos2'
+                    viewBox="225 300 600 400" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    version="1.1">
+                        
+                        <g transform="translate(490.4428724243488 346.1357388614863)">
+                            <animated.path 
+                                id="blob2"
+                                d={animationProps.blob} 
+                                config={{duration:5000}}
+                                fill="#BB004B"
+                            /> 
+                        </g>                        
+                </svg>
+
+                <svg 
+                    className='blob pos3'
+                    viewBox="-100 0 1200 800" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    version="1.1">
+                        
+                        <g transform="translate(490.4428724243488 346.1357388614863)">
+                            <animated.path 
+                                id="blob2"
+                                d={animationProps.blob} 
+                                config={{duration:5000}}
+                                fill="#BB004B"
+                            /> 
+                        </g>                        
+                </svg>
+
+                <svg 
+                    className='blob pos4'
+                    viewBox="-300 0 1500 1000" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    version="1.1">
+                        
+                        <g transform="translate(490.4428724243488 346.1357388614863)">
+                            <animated.path 
+                                id="blob2"
+                                d={animationProps.blob} 
+                                config={{duration:5000}}
+                                fill="#BB004B"
+                            /> 
+                        </g>                        
+                </svg>
+
+                <svg 
+                    className='blob pos5'
+                    viewBox="-1000 -500 3000 2000" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    version="1.1">
+                        
+                        <g transform="translate(490.4428724243488 346.1357388614863)">
+                            <animated.path 
+                                id="blob2"
+                                d={animationProps.blob} 
+                                config={{duration:5000}}
+                                fill="#BB004B"
+                            /> 
+                        </g>                        
+    </svg>*/}
       </>
     );
 }
