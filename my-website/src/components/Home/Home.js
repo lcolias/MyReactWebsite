@@ -60,7 +60,7 @@ function Home(props){
 
                 <svg 
                     className='blob pos1'
-                    viewBox="0 0 900 600" 
+                    viewBox="450 150 300 300" 
                     xmlns="http://www.w3.org/2000/svg" 
                     version="1.1">
                         
@@ -73,6 +73,9 @@ function Home(props){
                             /> 
                         </g>                        
                 </svg>
+
+                
+                
                 
                 <div className='content'>
                     <h1>Howdy y'all, I'm {props.name}</h1>

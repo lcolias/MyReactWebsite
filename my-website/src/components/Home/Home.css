@@ -2,19 +2,35 @@
     
 }
 
-.main-container .blob{
-    width: 50%;
-    height: 100%;
-
+.blob{
     position: absolute;
     z-index: 1;
-    
+
+    border: 3px red solid;
 }
 
 .pos1 {
-    top: -5%;
-    left: -20%;
-    scale: 2;
+    width: 25%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+}
+
+.pos2{
+    width: 50%;
+    height: 25%;
+
+    top: 0%;
+    left: 25%; 
+}
+
+.pos3{
+    width: 25%;
+    height: 50%;
+
+    top: 0%;
+    right: 0; 
 }
 
 
@@ -22,4 +38,76 @@
 
     position: absolute;
     z-index: 2;
+}
+
+/*Tablet min-width*/
+@media all and (min-width: 700px) {
+    .pos1 {
+        width: 25%;
+        height: 100%;
+        
+        top: 0;
+        left: 0;
+    }
+    
+    .pos2{
+        width: 50%;
+        height: 25%;
+    
+        top: 0%;
+        left: 25%; 
+    }
+
+    .pos3{
+        width: 25%;
+        height: 50%;
+    
+        top: 0%;
+        right: 0; 
+    }
+
+}
+
+@media all and (min-width: 960px){
+    .pos1 {
+        width: 25%;
+        height: 100%;
+        
+        top: 0;
+        left: 0;
+    }
+    
+    .pos2{
+        width: 50%;
+        height: 25%;
+    
+        top: 0%;
+        left: 25%; 
+    }
+
+    .pos3{
+        width: 25%;
+        height: 33%;
+    
+        top: 0%;
+        right: 0; 
+    }
+
+    .pos4{
+        width: 12.5%;
+        height: 33%;
+    
+        top: 33%;
+        right: 0;
+    }
+
+    .pos5{
+        width: 25%;
+        height: 33%;
+    
+        top: 66%;
+        right: 0; 
+    }
+
+
 }
