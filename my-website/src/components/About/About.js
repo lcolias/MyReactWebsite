@@ -13,7 +13,7 @@ function About() {
 
     return(
         <>
-          <Navbar />
+          
             <header>
                 <div class="section-content-wrapper">
                     <h1>Lucas Colias</h1>

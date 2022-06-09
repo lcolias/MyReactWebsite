@@ -12,6 +12,8 @@ import Contact from './components/Contact/Contact';
 import Secret from './components/Secret/Secret';
 import Whoops404 from './components/ErrorPage/Whoops404';
 
+import Navbar from './components/Navbar/Navbar';
+
 function Splash(props) {
   return(
     <>
@@ -31,6 +33,9 @@ function App(props) {
       //<GitHubUser login="lcolias"/>
       <>
         <div className='App'>
+
+          <Navbar />
+
           <Routes>
             <Route path="/" element={<Home name="Luke"/>}/>
             <Route path="/about" element={<About />}/>

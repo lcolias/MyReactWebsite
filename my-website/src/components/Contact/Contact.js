@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 function Contact(){
     return(
         <>
-            <Navbar />
+            
             <h1>Contact Page!</h1>
         </>
     );

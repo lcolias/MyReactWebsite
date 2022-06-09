@@ -14,9 +14,8 @@ function Home(props){
         <>
             <section className='main-container'>
 
-                <Navbar />
-
                 
+
                 <Blob blobNum='1'/>
                 
                 

@@ -39,10 +39,11 @@ function Blob(props){
     },[activeIndex])
 
     // Blob Movement Animation
-    const blobAnimationProps = useSpring(
+    const animationProps = useSpring(
         { 
-            to: { opacity: 1, x: 1},
-            from: {opacity: 0, x: 0},
+            to:     {x:1},
+            from:   {x: 0},
+            
             config: {duration: DURATION} 
         }  
       );
@@ -50,11 +51,14 @@ function Blob(props){
 
     return(
         <>
-            <animated.svg style={blobAnimationProps}
+            <animated.svg 
+                    
+                    style={animationProps}
                     className='blob'
                     viewBox="0 0 900 600" 
                     xmlns="http://www.w3.org/2000/svg" 
-                    version="1.1">
+                    version="1.1"
+                    >
 
                     <g transform="translate(490.4428724243488 346.1357388614863)">
                         <animated.path 
