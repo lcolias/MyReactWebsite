@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 function Funstuff() {
     return(
         <>
-            <Navbar />
+            
             <h1>Fun-Stuff Page!</h1>
             
         </>

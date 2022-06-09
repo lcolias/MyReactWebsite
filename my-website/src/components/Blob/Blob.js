@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {animated, useSpring} from 'react-spring';
+import {animated, useSpring, to} from 'react-spring';
 
 import "./Blob.css";
 
@@ -39,22 +39,21 @@ function Blob(props){
     },[activeIndex])
 
     // Blob Movement Animation
-    const blobAnimationProps = useSpring(
-        { 
-            to: { opacity: 1, x: 1},
-            from: {opacity: 0, x: 0},
-            config: {duration: DURATION} 
-        }  
-      );
+    const { x, y } = useSpring({ x: 0, y: 0 })
+
+    const transform = to([x, y], (x, y) => `translate(${x}px, ${y}px)`)
 
 
     return(
         <>
-            <animated.svg style={blobAnimationProps}
+            <animated.svg 
+                    
+                    style={transform}
                     className='blob'
                     viewBox="0 0 900 600" 
                     xmlns="http://www.w3.org/2000/svg" 
-                    version="1.1">
+                    version="1.1"
+                    >
 
                     <g transform="translate(490.4428724243488 346.1357388614863)">
                         <animated.path 
