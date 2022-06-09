@@ -1,0 +1,16 @@
+.blob{
+    position: absolute;
+    z-index: 0;
+
+    width: 50%;
+    height: 50%;
+
+    top: 0;
+    left: 0;
+
+    border: 3px red solid;
+}
+
+.blob1{
+    fill:pink;
+}

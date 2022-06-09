@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import "./Skills.css";
 
+import Navbar from "../Navbar/Navbar";
+
 function GitHubUser({login}) {
     const [data, setData] = React.useState(null);
     
@@ -53,6 +55,7 @@ function Skills({ login }){
     if(data) {
       return(
         <>
+            <Navbar />
             <h1>Skills Page!</h1>
             <div>Github Username:{data.login}</div>
             <div>Location:{data.location}</div>
@@ -63,6 +66,9 @@ function Skills({ login }){
 
     return(
       <>
+
+        <Navbar />
+
           <h1>Skills Page!</h1>
           <div>No User Available</div>
           {/*<svg 
