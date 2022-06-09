@@ -2,9 +2,12 @@ import React from "react";
 
 import "./Whoops404.css";
 
+import Navbar from "../Navbar/Navbar";
+
 function Whoops404() {
     return(
         <>
+            <Navbar />
             <h1>Error Page not Found!</h1>
         </>
     );

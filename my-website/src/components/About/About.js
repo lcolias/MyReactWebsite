@@ -2,6 +2,8 @@ import React, {useState, useEffect, useReducer} from "react";
 
 import "./About.css";
 
+import Navbar from "../Navbar/Navbar";
+
 function About() {
 
     const [checked, toggle] = useReducer(
@@ -11,7 +13,7 @@ function About() {
 
     return(
         <>
-
+          <Navbar />
             <header>
                 <div class="section-content-wrapper">
                     <h1>Lucas Colias</h1>
