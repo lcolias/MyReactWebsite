@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import "./Skills.css";
 
-import Navbar from "../Navbar/Navbar";
 
 function GitHubUser({login}) {
     const [data, setData] = React.useState(null);
@@ -32,6 +31,7 @@ function GitHubUser({login}) {
 function Skills({ login }){
 
     const [data, setData] = useState(null);
+    const [repos, setRepos] = useState(null);
     const [loading, setLoading] = useState(null);
     const [error, setError] = useState(false); 
 
@@ -53,6 +53,13 @@ function Skills({ login }){
     if(!data) return null;
 
     if(data) {
+
+      fetch(data.repos_url)
+        .then(res => res.json())
+        .then(setRepos)
+        .catch(setError);
+
+      console.log(data);
       return(
         <>
            
@@ -60,80 +67,25 @@ function Skills({ login }){
             <div>Github Username:{data.login}</div>
             <div>Location:{data.location}</div>
             <img alt={data.login} src={data.avatar_url} width="100" height="100"/>
+            <div className="grid-Container">
+              <div className="grid-item">1</div>
+              <div className="grid-item">2</div>
+              <div className="grid-item">3</div>
+              <div className="grid-item">4</div>
+              <div className="grid-item">5</div>
+              <div className="grid-item">6</div>
+              <div className="grid-item">7</div>
+              <div className="grid-item">8</div>
+              <div className="grid-item">9</div>
+            </div>
         </>
       );
     }
 
     return(
       <>
-
-        
-
           <h1>Skills Page!</h1>
           <div>No User Available</div>
-          {/*<svg 
-                    className='blob pos2'
-                    viewBox="225 300 600 400" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    version="1.1">
-                        
-                        <g transform="translate(490.4428724243488 346.1357388614863)">
-                            <animated.path 
-                                id="blob2"
-                                d={animationProps.blob} 
-                                config={{duration:5000}}
-                                fill="#BB004B"
-                            /> 
-                        </g>                        
-                </svg>
-
-                <svg 
-                    className='blob pos3'
-                    viewBox="-100 0 1200 800" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    version="1.1">
-                        
-                        <g transform="translate(490.4428724243488 346.1357388614863)">
-                            <animated.path 
-                                id="blob2"
-                                d={animationProps.blob} 
-                                config={{duration:5000}}
-                                fill="#BB004B"
-                            /> 
-                        </g>                        
-                </svg>
-
-                <svg 
-                    className='blob pos4'
-                    viewBox="-300 0 1500 1000" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    version="1.1">
-                        
-                        <g transform="translate(490.4428724243488 346.1357388614863)">
-                            <animated.path 
-                                id="blob2"
-                                d={animationProps.blob} 
-                                config={{duration:5000}}
-                                fill="#BB004B"
-                            /> 
-                        </g>                        
-                </svg>
-
-                <svg 
-                    className='blob pos5'
-                    viewBox="-1000 -500 3000 2000" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    version="1.1">
-                        
-                        <g transform="translate(490.4428724243488 346.1357388614863)">
-                            <animated.path 
-                                id="blob2"
-                                d={animationProps.blob} 
-                                config={{duration:5000}}
-                                fill="#BB004B"
-                            /> 
-                        </g>                        
-    </svg>*/}
       </>
     );
 }
