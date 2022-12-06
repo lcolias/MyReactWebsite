@@ -1,0 +1,26 @@
+.skills-page{
+    background-color: #160B0B;
+    height: 100%;
+}
+
+.flex-container{
+    display: flexbox;
+    justify-content: center;
+    background-color: rgba(245, 245, 245, 0.403);
+    padding: 10px;
+}
+
+.flex-item{
+    width: 20%;
+    height: 40%;
+    display: inline-block;
+    margin: 5rem;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+
+    font-size: 30px;
+    text-align: center;
+    
+}
