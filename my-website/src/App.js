@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -27,8 +27,9 @@ function Splash(props) {
 }
 
 function App(props) {
-     
-  
+
+  const [color, setColor] = useState(null);
+
   return (
       //<GitHubUser login="lcolias"/>
       <>
