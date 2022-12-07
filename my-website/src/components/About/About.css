@@ -1,0 +1,20 @@
+.main-info-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.main-info{
+
+}
+
+.main-info img{
+    height: 360px;
+    width: 360px;
+    margin: 0;
+    border-radius: 10%;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}

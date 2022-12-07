@@ -2,9 +2,59 @@ import React, {useState, useEffect, useReducer} from "react";
 
 import "./About.css";
 
-import Navbar from "../Navbar/Navbar";
+function GitHubUser({login}) {
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(null);
+    const [error, setError] = useState(false); 
 
-function About() {
+    useEffect(() => {
+
+      if(!login) return; 
+
+      setLoading(true);
+
+      fetch(`https://api.github.com/users/${login}`)
+        .then(res => res.json())
+        .then(setData)
+        .then(() => setLoading(false))
+        .catch(setError);
+    }, [login]);
+
+    if(loading) return <h1>loading...</h1>
+    if(error) return <pre>{JSON.stringify(error, null, 2)}</pre>
+    if(!data) return null;
+
+    if(data) {
+
+      console.log(data);
+
+      return(
+        <>
+            <div className="main-info-grid">
+              <div className="main-info grid-col-span-2" >
+                <img alt={data.login} src={data.avatar_url}/>
+              </div>
+
+              <div className="main-info" >
+                <div>Name:{data.name}</div>
+                <div>Location:{data.location}</div>
+                <div>Company:{data.company}</div>
+                <div>Motto:{data.bio}</div>
+              </div>
+            </div>
+
+        </>
+      );
+    }
+
+    return(
+      <>
+          <div>No User Available</div>
+      </>
+    );
+}
+
+function About({login}) {
 
     const [checked, toggle] = useReducer(
         (checked) => !checked, 
@@ -13,7 +63,8 @@ function About() {
 
     return(
         <>
-          
+          <GitHubUser login={login}/>
+
             <header>
                 <div class="section-content-wrapper">
                     <h1>Lucas Colias</h1>
