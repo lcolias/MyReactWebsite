@@ -5,16 +5,38 @@
 }
 
 .main-info{
-
+    font-size: 2em;
+    align-self: center;
 }
 
 .main-info img{
-    height: 360px;
+    
     width: 360px;
+    height: auto;
     margin: 0;
-    border-radius: 10%;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px rgb(54, 54, 54);
+    
 }
 
-.grid-col-span-2{
-    grid-column: span 2;
+.main-info.avi{
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
+
+.main-info.fields{
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.main-info.data{
+    text-align: left;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.spacing{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
