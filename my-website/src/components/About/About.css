@@ -1,24 +1,20 @@
-.flexbox-container{
-    display: flex;
-    align-items: center;
-    
+.main-info-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(8, 1fr);
 }
 
-.flexbox-item-left{
-    flex: 40%;
-    align-self: center;
+.main-info{
+
 }
 
-.flexbox-item-right{
-    flex: 60%;
-}
-
-
-.flexbox-item-left img{
+.main-info img{
     height: 360px;
     width: 360px;
     margin: 0;
     border-radius: 10%;
-    
-       
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
 }

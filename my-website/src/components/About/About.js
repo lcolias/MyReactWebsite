@@ -30,12 +30,12 @@ function GitHubUser({login}) {
 
       return(
         <>
-            <div className="flexbox-container">
-              <div className="flexbox-item-left" >
+            <div className="main-info-grid">
+              <div className="main-info grid-col-span-2" >
                 <img alt={data.login} src={data.avatar_url}/>
               </div>
 
-              <div className="flexbox-item-right" >
+              <div className="main-info" >
                 <div>Name:{data.name}</div>
                 <div>Location:{data.location}</div>
                 <div>Company:{data.company}</div>
