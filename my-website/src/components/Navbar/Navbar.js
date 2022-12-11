@@ -7,11 +7,11 @@ import './Navbar.css';
 
 /* */
 function Navbar() {
+  
   const [toggled, toggle] = useReducer(
     (toggled) => !toggled, 
     false
-);
-
+  );
 
   return (
     <>

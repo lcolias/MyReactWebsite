@@ -13,7 +13,6 @@ nav {
 }
 
 .navbar {
-  
     position: relative;
     z-index: 1;
 }
@@ -28,7 +27,7 @@ nav {
 
 .navbar-container li a {
     display: block;
-    padding: 20px 5px;
+    margin: 20px 5px;
 }
 
 .toggle {
