@@ -1,3 +1,8 @@
+em {
+    color: darkgreen;
+    font-style: italic;
+}
+
 .main-info-grid{
     display: grid;
     gap: 1.5rem;
@@ -9,9 +14,14 @@
     align-self: center;
 }
 
+.main-info div{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
 .main-info img{
     
-    width: 360px;
+    width: 20vw;
     height: auto;
     margin: 0;
     border-radius: 25%;
@@ -35,8 +45,16 @@
     grid-column-end: 8;
 }
 
-.spacing{
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
+.section-content-wrapper{
+    text-align: justify;
+    padding: 1em 2em;
+    
+    font-size: 1.25em;
+    background-color: rgba(255, 255, 255, 0.222);
 }
+
+.content-spacing{
+    margin-top: 2em;
+}
+
 
