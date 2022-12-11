@@ -18,11 +18,11 @@ function Navbar() {
         <nav className='navbar'>
             <ul className={toggled ? 'active navbar-container' : 'navbar-container'}>
                 <li className='navbar-logo'><Link to='' > Lucas Colias </Link></li>
-                <li className='navbar-link'><Link to=''         >   <FaHome />            Home      </Link></li>
-                <li className='navbar-link'><Link to='about'    >   <FaInfoCircle />      About     </Link></li>
-                <li className='navbar-link'><Link to='skills'   >   <FaCode />            Skills    </Link></li>
-                <li className='navbar-link'><Link to='funstuff' >   <FaBasketballBall />  Interests </Link></li>
-                <li className='navbar-link'><Link to='contact'  >   <FaMailBulk />        Contact   </Link></li>
+                <li className='navbar-link'><Link to=''         >   <FaHome />            <div>Home</div>      </Link></li>
+                <li className='navbar-link'><Link to='about'    >   <FaInfoCircle />      <div>About</div>    </Link></li>
+                <li className='navbar-link'><Link to='skills'   >   <FaCode />            <div>Skills</div>     </Link></li>
+                <li className='navbar-link'><Link to='funstuff' >   <FaBasketballBall />  <div>Interests</div>  </Link></li>
+                <li className='navbar-link'><Link to='contact'  >   <FaMailBulk />        <div>Contact</div>    </Link></li>
                 <li className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </li> 
             </ul>
         </nav>
