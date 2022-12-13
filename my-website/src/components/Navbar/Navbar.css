@@ -7,46 +7,46 @@
     font-family: 'Quicksand';
 }
 
-nav {
-    background-color: transparent;
-    padding: 0 15px;
-}
-
 .navbar {
-  
     position: relative;
     z-index: 1;
+    background-color: transparent;
+    margin: 0 1em;
 }
 
 .navbar-container {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    list-style-type: none;
+    justify-content: center;
 }
 
-.navbar-container li a {
-    display: block;
-    padding: 20px 5px;
-}
-
-.toggle {
-    order: 1;
+.navbar-container li{
+    margin: 0.75em;
 }
 
 .navbar-logo {
-    font-size: large;
-    padding: 0 10px 4px 0;
+    flex: 1;
+    font-size: 2em;
     text-align: left;
 }
 
 .navbar-link {
-    font-size: large;
-    order: 3;
-    width: 100%;
-    text-align: left;
     display: none;
+    flex: 0 1 auto;
+    font-size: 1.25em;
+}
+
+.navbar-link a svg{
+    display: inline;
+    margin-right: 0.1em;
+    vertical-align: text-top;
+}
+
+.navbar-link a div{
+    display: inline;
+    font-size: 0;
+    transition: font-size 300ms ease-in-out 100ms;
 }
 
 .active .navbar-link {
@@ -55,7 +55,7 @@ nav {
 
 .active .navbar-link a svg{
     box-sizing: content-box;
-    padding-right: 4px;
+
     display: inline;
 }
 
@@ -63,49 +63,33 @@ nav {
     border-bottom: 1px #444 solid;
 }
 
-.navbar-link:not(.button) a:hover,
-.navbar-link a:hover::after {
+.navbar-link a:hover div,
+.navbar-link a:focus div{
+    font-size: 1.25em;
+    color: #ccc;
+}
+
+.navbar-link a:hover,
+.navbar-link a:focus{
     color: #ccc;
 }
 
 /*Tablet min-width*/
 @media all and (min-width: 700px) {
-    .navbar-container {
-        justify-content: center;
-    }
-    .navbar-logo {
-        font-size: x-large;
-        flex: 1;
-    }
-  
-    .toggle {
-        text-align: right;
-        order: 2;
-    }
-
+    
 }
 
 
 @media all and (min-width: 960px){
+    
     .navbar-container {
-        align-items: flex-start;
-        flex-wrap: nowrap;
-        background: none;
-    }
-
-    .navbar-logo {
-        order: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar-link {
-        order: 1;
-        position: relative;
         display: block;
         width: auto;
-    }
-
-    .navbar-link a svg{
-        display: inline;
     }
 
     .toggle {
