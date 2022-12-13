@@ -21,9 +21,8 @@
     justify-content: center;
 }
 
-.navbar-container li a {
-    display: block;
-    margin: 20px 5px;
+.navbar-container li{
+    margin: 0.75em;
 }
 
 .navbar-logo {
@@ -33,13 +32,21 @@
 }
 
 .navbar-link {
-    flex: 0 1 3em;
-    font-size: 1.25em;
     display: none;
+    flex: 0 1 auto;
+    font-size: 1.25em;
+}
+
+.navbar-link a svg{
+    display: inline;
+    margin-right: 0.1em;
+    vertical-align: text-top;
 }
 
 .navbar-link a div{
-    display: none;
+    display: inline;
+    font-size: 0;
+    transition: font-size 300ms ease-in-out 100ms;
 }
 
 .active .navbar-link {
@@ -48,12 +55,18 @@
 
 .active .navbar-link a svg{
     box-sizing: content-box;
-    padding-right: 4px;
+
     display: inline;
 }
 
 .button-secondary {
     border-bottom: 1px #444 solid;
+}
+
+.navbar-link a:hover div,
+.navbar-link a:focus div{
+    font-size: 1.25em;
+    color: #ccc;
 }
 
 .navbar-link a:hover,
@@ -77,10 +90,6 @@
     .navbar-link {
         display: block;
         width: auto;
-    }
-
-    .navbar-link a svg{
-        display: inline;
     }
 
     .toggle {
