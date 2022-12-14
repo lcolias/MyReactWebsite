@@ -10,7 +10,13 @@ function Skills(){
       <div className="skills-page">  
 
         <section className="Projects">
+
+          
+
           <div className="flex-container">
+
+            <div className="section-title"> Featured Projects </div>
+            
             <div className="flex-item">Project 1</div>
             <div className="flex-item">Project 2</div>
             <div className="flex-item">Project 3</div>

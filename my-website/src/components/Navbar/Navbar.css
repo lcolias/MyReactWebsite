@@ -63,14 +63,12 @@
     border-bottom: 1px #444 solid;
 }
 
-.navbar-link a:hover div,
-.navbar-link a:focus div{
+.navbar-link a:hover div{
     font-size: 1.25em;
     color: #ccc;
 }
 
-.navbar-link a:hover,
-.navbar-link a:focus{
+.navbar-link a:hover{
     color: #ccc;
 }
 
