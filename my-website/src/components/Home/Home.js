@@ -18,7 +18,37 @@ function Home(props){
 
                 <Blob blobNum='1'/>
                 
-                
+
+                <section className='introduction'>
+
+                </section>
+
+                <section className='about'>
+
+                </section>
+
+                <section className='skills '>
+
+                </section>
+
+                <section className='interests'>
+
+                </section>
+
+                <section className='contact'>
+
+                </section>
+
+                <section className='footer'>
+                    <ul>
+                        <li className='footer-link'><div>LinkedIn</div></li>
+                        <li className='footer-link'><div>Facebook</div></li>
+                        <li className='footer-link'><div>Instagram</div></li>
+                        <li className='footer-link'><div>Twitter</div></li>
+                        <li className='footer-link'><div>Email</div></li>
+                    </ul>
+                </section>
+               
                 
                 {/*
                     <Parallax pages={5}>
