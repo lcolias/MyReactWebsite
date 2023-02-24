@@ -1,45 +1,45 @@
-import React, {useState, useEffect} from 'react';
-import {animated, useSpring} from 'react-spring';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
+import React, {useState, useEffect, useRef} from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import "./Home.css"; 
 
-import Navbar from '../Navbar/Navbar';
-import Blob from'../Blob/Blob';
 
 function Home(props){
+
+    // Creates an intersection observer to apply to HTML elements
+    const { ref: inViewRef, inView, entry } = useInView({
+        threshold: 0.5
+    });  
+
+    useEffect(() => {
+        console.log(entry);
+    },[entry]);
 
     return(
         <>
             <section className='main-container'>
-
                 
 
-                <Blob blobNum='1'/>
-                
-
-                <section className='introduction'>
-
+                <section ref={inViewRef} className={`introduction`}>
+                    <h1 className={`hidden ${inView ? 'show' : '' }`}>Howdy Patna's</h1>
+                    <h2 className={`hidden ${inView ? 'show' : '' }`}>The names Luke!</h2>
                 </section>
 
                 <section className='about'>
+                    <h2>About Me</h2>
+                    <p>I'm a Software Engineer currently working at <b>Northrup Grumman</b>. </p>
 
                 </section>
 
-                <section className='skills '>
-
+                <section className='skills'>
+                    <h2>Checkout My Skillz</h2>
                 </section>
 
                 <section className='interests'>
-
+                    <h2>Peep the Hobbies</h2>
                 </section>
 
                 <section className='contact'>
-
-                </section>
-
-                <section className='footer'>
                     <ul>
                         <li className='footer-link'><div>LinkedIn</div></li>
                         <li className='footer-link'><div>Facebook</div></li>
@@ -48,7 +48,7 @@ function Home(props){
                         <li className='footer-link'><div>Email</div></li>
                     </ul>
                 </section>
-               
+
                 
                 {/*
                     <Parallax pages={5}>
