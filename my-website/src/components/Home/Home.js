@@ -1,45 +1,57 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useInView } from 'react-intersection-observer';
 
+import Tile from '../Tile/Tile';
+
 import "./Home.css"; 
 
 
 function Home(props){
 
     // Creates an intersection observer to apply to HTML elements
-    const { ref: inViewRef, inView, entry } = useInView({
+    const { ref: introRef, inView: introInview, entry: introEntry  } = useInView({
         threshold: 0.5
     });  
-
-    useEffect(() => {
-        console.log(entry);
-    },[entry]);
-
+    const { ref: aboutRef, inView: aboutInView, entry: aboutEntry } = useInView({
+        threshold: 0.5
+    });  
+    const { ref: skillsRef, inView: skillsInView, entry: skillsEntry } = useInView({
+        threshold: 0.5
+    });  
+    const { ref: interestsRef, inView: interestsInView, entry: interestsEntry } = useInView({
+        threshold: 0.5
+    });  
+    const { ref: contactRef, inView: contactInView, entry: contactEntry } = useInView({
+        threshold: 0.5
+    });  
+    
     return(
         <>
             <section className='main-container'>
                 
 
-                <section ref={inViewRef} className={`introduction`}>
-                    <h1 className={`hidden ${inView ? 'show' : '' }`}>Howdy Patna's</h1>
-                    <h2 className={`hidden ${inView ? 'show' : '' }`}>The names Luke!</h2>
+                <section ref={introRef} className={`introduction`}>
+                    <h1 className={`hidden ${introInview ? 'show' : '' }`}>Howdy Patna's</h1>
+                    <h2 className={`hidden ${introInview ? 'show' : '' }`}>Name's Luke!</h2>
                 </section>
 
-                <section className='about'>
-                    <h2>About Me</h2>
-                    <p>I'm a Software Engineer currently working at <b>Northrup Grumman</b>. </p>
+                
+                <section ref={aboutRef} className='about'>
+                    <h2 className={`hidden ${aboutInView ? 'show' : '' }`}>About Me</h2>
+                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>I'm a Software Engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
+                </section>
+                 
+                <section ref={skillsRef} className='skills'>
+                    <h2 className={`hidden ${skillsInView ? 'show' : '' }`} >Checkout My Skillz</h2>
 
+                    <Tile> </Tile>
                 </section>
 
-                <section className='skills'>
-                    <h2>Checkout My Skillz</h2>
+                <section ref={interestsRef} className='interests'>
+                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>Peep the Hobbies</h2>
                 </section>
 
-                <section className='interests'>
-                    <h2>Peep the Hobbies</h2>
-                </section>
-
-                <section className='contact'>
+                <section ref={contactRef} className='contact'>
                     <ul>
                         <li className='footer-link'><div>LinkedIn</div></li>
                         <li className='footer-link'><div>Facebook</div></li>
