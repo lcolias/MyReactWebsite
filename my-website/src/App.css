@@ -51,3 +51,8 @@
   
 }
 
+@font-face {
+  font-family: "Futura Bold";   /*Can be any text*/
+  src: local("Futura Bold"),
+    url('./fonts/Futura\ Bold.otf') format("opentype");
+}
