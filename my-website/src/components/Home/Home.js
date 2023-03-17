@@ -8,6 +8,12 @@ import "./Home.css";
 
 function Home(props){
 
+    const refs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null),]
+
+    const { ref: inViewRefs, inView: inViews } = useInView({
+        threshold: 0.5
+    });
+    
     // Creates an intersection observer to apply to HTML elements
     const { ref: introRef, inView: introInview, entry: introEntry  } = useInView({
         threshold: 0.5
