@@ -1,8 +1,35 @@
 .tile-container {
     height: 300px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    overflow: hidden;
+
 
     background-color: #d9d9d9;
     border-radius: 16px;
 
+}
+
+.tile-container img {
+    display: block;
+    margin: 0 auto;
+    height: 40%;
+    width: 40%;
+}
+
+.tile-container h1 {
+    padding: 0;
+    margin: 4px;
+    color: #727272;
+    font-size: 1.5rem;
+}
+
+.tile-container p {
+    padding: 0;
+    margin: 4px;
+    color: #727272;
+    font-size: 1.25rem;
 }

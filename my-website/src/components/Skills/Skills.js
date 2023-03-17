@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import "./Skills.css";
 
+import Tile from '../Tile/Tile';
+
 function Skills(){
 
   return(
