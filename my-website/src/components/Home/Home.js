@@ -50,7 +50,11 @@ function Home(props){
                 <section ref={skillsRef} className='skills'>
                     <h2 className={`hidden ${skillsInView ? 'show' : '' }`} >Checkout My Skillz</h2>
 
-                    <Tile> </Tile>
+                    <div className={`project-preview hidden ${skillsInView ? 'show' : '' }`}>
+                        <Tile > </Tile>
+                        <Tile > </Tile>
+                        <Tile > </Tile>
+                    </div>
                 </section>
 
                 <section ref={interestsRef} className='interests'>

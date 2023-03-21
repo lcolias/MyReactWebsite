@@ -1,6 +1,8 @@
 .tile-container {
     height: 300px;
     width: 300px;
+    margin: 16px;
+
     display: flex;
     flex-direction: column;
     align-items: left;

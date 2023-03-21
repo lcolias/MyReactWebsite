@@ -1,6 +1,36 @@
 em {
-    color: darkgreen;
+    color: rgb(236, 255, 231);
     font-style: italic;
+}
+
+.section-content-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.section-content-background {
+    margin: 8px 0;
+    background-color: rgba(255, 255, 255, 0.222);
+    border-radius: 8px;
+}
+
+.section-content-flex {
+    display: flex;
+}
+
+.section-content-item {
+    flex: 1;
+}
+
+.p-text-format{
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .main-info-grid{
@@ -44,17 +74,3 @@ em {
     grid-column-start: 5;
     grid-column-end: 8;
 }
-
-.section-content-wrapper{
-    text-align: justify;
-    padding: 1em 2em;
-    
-    font-size: 1.25em;
-    background-color: rgba(255, 255, 255, 0.222);
-}
-
-.content-spacing{
-    margin-top: 2em;
-}
-
-

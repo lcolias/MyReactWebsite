@@ -1,3 +1,12 @@
+
+/*Special Fonts*/
+
+.company-font{
+    font-family: Futura Bold;
+}
+
+/*Styles*/
+
 body {
     background-color: black;
 }
@@ -38,9 +47,22 @@ h1,h2,p {
     transform: translateX(0);
 }
 
-.company-font{
-    font-family: Futura Bold;
+
+.project-preview {
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
+
+.project-preview .item{
+
+    margin: 8px;
+
+}
+
+
 
 /*Tablet min-width*/
 @media all and (min-width: 700px) {
