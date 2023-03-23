@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useInView } from 'react-intersection-observer';
+import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaEnvelope} from 'react-icons/fa';
 
 import Tile from '../Tile/Tile';
 
@@ -37,18 +38,18 @@ function Home(props){
                 
 
                 <section ref={introRef} className={`introduction`}>
-                    <h1 className={`hidden ${introInview ? 'show' : '' }`}>Howdy Patna's</h1>
-                    <h2 className={`hidden ${introInview ? 'show' : '' }`}>Name's Luke!</h2>
+                    <h1 className={`hidden ${introInview ? 'show' : '' }`}>howdy patna's</h1>
+                    <h2 className={`hidden ${introInview ? 'show' : '' }`}>name's luke!</h2>
                 </section>
 
                 
                 <section ref={aboutRef} className='about'>
-                    <h2 className={`hidden ${aboutInView ? 'show' : '' }`}>About Me</h2>
-                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>I'm a Software Engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
+                    <h2 className={`hidden ${aboutInView ? 'show' : '' }`}>about me</h2>
+                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
                 </section>
                  
                 <section ref={skillsRef} className='skills'>
-                    <h2 className={`hidden ${skillsInView ? 'show' : '' }`} >Checkout My Skillz</h2>
+                    <h2 className={`hidden ${skillsInView ? 'show' : '' }`} >some skillz</h2>
 
                     <div className={`project-preview hidden ${skillsInView ? 'show' : '' }`}>
                         <Tile > </Tile>
@@ -58,17 +59,20 @@ function Home(props){
                 </section>
 
                 <section ref={interestsRef} className='interests'>
-                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>Peep the Hobbies</h2>
+                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies</h2>
                 </section>
 
                 <section ref={contactRef} className='contact'>
+                    <h2 className={`hidden ${contactInView ? 'show' : '' }`}>keep in touch!</h2>
+                    
                     <ul>
-                        <li className='footer-link'><div>LinkedIn</div></li>
-                        <li className='footer-link'><div>Facebook</div></li>
-                        <li className='footer-link'><div>Instagram</div></li>
-                        <li className='footer-link'><div>Twitter</div></li>
-                        <li className='footer-link'><div>Email</div></li>
+                        <li className='footer-link'><FaLinkedin /></li>
+                        <li className='footer-link'><FaInstagram /></li>
+                        <li className='footer-link'><FaTwitter /></li>
+                        <li className='footer-link'><FaFacebook /></li>
+                        <li className='footer-link'><FaEnvelope /></li>
                     </ul>
+
                 </section>
 
                 

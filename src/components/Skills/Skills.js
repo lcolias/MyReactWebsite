@@ -11,7 +11,7 @@ function Skills(){
   useEffect(() => {
     fetch('https://api.github.com/user/repos?type=public', {
       headers: {
-        Authorization: 'Bearer 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'
+        Authorization: 'Bearer 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'
       }
     })
     .then(response => response.json())
@@ -29,7 +29,7 @@ function Skills(){
           <h1>My GitHub Repositories</h1>
             
           <ul>
-            {repos.map(repo => (
+          {repos.map(repo => (
               <li key={repo.id}>
                 <a href={repo.html_url}>{repo.name}</a>
               </li>
