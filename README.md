@@ -1,4 +1,4 @@
-# My First React App
+# My Personal Website React App
 
 This React project is meant to serve as my personal website as well as a tool for increasing my understanding of web development.
 A link to my website is provided here [lukecolias.com]().
