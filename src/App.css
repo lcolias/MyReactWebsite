@@ -4,53 +4,6 @@
   text-align: center;
 }
 
-.Splash-wrapper{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Splash-title {
-  color: whitesmoke;
-  font-size: 3em;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-
-  .Splash-title {
-    animation: 2s 1 linear Splash-screen-enter;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes Splash-screen-enter {
-  from{
-    font-size: 0em;
-  }
-
-  75% {
-    font-size: 4em;
-  }
-
-  to {
-    font-size: 3em;
-  }
-  
-}
-
 @font-face {
   font-family: "Futura Bold";   /*Can be any text*/
   src: local("Futura Bold"),

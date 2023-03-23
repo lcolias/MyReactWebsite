@@ -17,12 +17,12 @@ function Navbar() {
     <>
         <nav className='navbar'>
             <ul className={toggled ? 'active navbar-container' : 'navbar-container'}>
-                <li className='navbar-logo'><Link to='' > Lucas Colias </Link></li>
-                <li className='navbar-link'><Link to=''         >   <FaHome />            <div>Home</div>      </Link></li>
-                <li className='navbar-link'><Link to='about'    >   <FaInfoCircle />      <div>About</div>    </Link></li>
-                <li className='navbar-link'><Link to='skills'   >   <FaCode />            <div>Skills</div>     </Link></li>
-                <li className='navbar-link'><Link to='funstuff' >   <FaBasketballBall />  <div>Interests</div>  </Link></li>
-                <li className='navbar-link'><Link to='contact'  >   <FaMailBulk />        <div>Contact</div>    </Link></li>
+                <li className='navbar-logo'><Link to='' > lucas colias </Link></li>
+                <li className='navbar-link'><Link to=''         >   <FaHome />            <div>home</div>      </Link></li>
+                <li className='navbar-link'><Link to='about'    >   <FaInfoCircle />      <div>about</div>    </Link></li>
+                <li className='navbar-link'><Link to='skills'   >   <FaCode />            <div>skills</div>     </Link></li>
+                <li className='navbar-link'><Link to='funstuff' >   <FaBasketballBall />  <div>interests</div>  </Link></li>
+                <li className='navbar-link'><Link to='contact'  >   <FaMailBulk />        <div>contact</div>    </Link></li>
                 <li className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </li> 
             </ul>
         </nav>
