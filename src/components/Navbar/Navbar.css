@@ -8,60 +8,59 @@
     text-decoration: none;
 }
 
+/* main navbar container styles */
 .navbar {
-    position: relative;
+    /* position styles */
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
     z-index: 1;
-    background-color: transparent;
-    margin: 0 1em;
-}
 
-.navbar-container {
-    display: flex; 
-    flex-wrap: wrap;
+    /* display styles */
+    display: flex;
     align-items: center;
-    justify-content: center;
+
+    /* visual styles */
+    padding: 8px 16px;
+    background-color: transparent;
 }
 
-.navbar-container li{
-    margin: 0.75em;
-}
-
+/* navbar logo styles */
 .navbar-logo {
     flex: 1;
     font-size: 2em;
     text-align: left;
 }
 
+/* navbar link container styles (**CONTAINER FOR THE LINKS**)*/
+.navbar-link-container {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link-container li{
+    margin: 0.75em;
+}
+
+/* navbar link styles (**THE LINKS**) */
 .navbar-link {
-    display: none;
+    display: block;
     flex: 0 1 auto;
     font-size: 1.25em;
 }
 
 .navbar-link a svg{
-    display: inline;
-    margin-right: 0.1em;
-    vertical-align: text-top;
+    margin-right: 0.1em; /* REMOVE FOR NAVBAR UPDATE */
 }
 
+/* link animations  */
 .navbar-link a div{
     display: inline;
     font-size: 0;
     transition: font-size 300ms ease-in-out 100ms;
-}
-
-.active .navbar-link {
-    display: block;
-}
-
-.active .navbar-link a svg{
-    box-sizing: content-box;
-
-    display: inline;
-}
-
-.button-secondary {
-    border-bottom: 1px #444 solid;
 }
 
 .navbar-link a:hover div{
@@ -73,25 +72,30 @@
     color: #ccc;
 }
 
-/*Tablet min-width*/
-@media all and (min-width: 700px) {
-    
+.active .navbar-link {
+    display: block;
+}
+
+.active .navbar-link a svg{
+    box-sizing: content-box;
+    display: inline;
+}
+
+.toggle {
+    display: none;
+}
+
+.button-secondary {
+    border-bottom: 1px #444 solid;
 }
 
 
-@media all and (min-width: 960px){
-    
-    .navbar-container {
-        align-items: center;
-        justify-content: center;
-    }
+/* On screens that are 992px or less, set the background color to blue */
+@media all and (max-width: 960px) {
 
-    .navbar-link {
-        display: block;
-        width: auto;
-    }
+}
+  
+/* On screens that are 600px or less, set the background color to olive */
+@media all and (max-width: 700px) {
 
-    .toggle {
-        display: none;
-    }
 }

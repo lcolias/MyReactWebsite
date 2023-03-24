@@ -16,15 +16,18 @@ function Navbar() {
   return (
     <>
         <nav className='navbar'>
-            <ul className={toggled ? 'active navbar-container' : 'navbar-container'}>
-                <li className='navbar-logo'><Link to='' > lucas colias </Link></li>
-                <li className='navbar-link'><Link to=''         >   <FaHome />            <div>home</div>      </Link></li>
-                <li className='navbar-link'><Link to='about'    >   <FaInfoCircle />      <div>about</div>    </Link></li>
-                <li className='navbar-link'><Link to='skills'   >   <FaCode />            <div>skills</div>     </Link></li>
-                <li className='navbar-link'><Link to='interests'>   <FaBasketballBall />  <div>interests</div>  </Link></li>
-                <li className='navbar-link'><Link to='contact'  >   <FaMailBulk />        <div>contact</div>    </Link></li>
-                <li className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </li> 
-            </ul>
+
+          <Link to='' className='navbar-logo'> lucas colias </Link>
+          
+          <ul className={toggled ? 'active navbar-link-container' : 'navbar-link-container'}> 
+            <li className='navbar-link'><Link to=''         ><FaHome /><div>home</div></Link></li>
+            <li className='navbar-link'><Link to='about'    ><FaInfoCircle /><div>about</div></Link></li>
+            <li className='navbar-link'><Link to='skills'   ><FaCode /><div>skills</div></Link></li>
+            <li className='navbar-link'><Link to='interests'><FaBasketballBall /><div>interests</div></Link></li>
+            <li className='navbar-link'><Link to='contact'  ><FaMailBulk /><div>contact</div></Link></li>
+            <li className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </li> 
+          </ul>
+
         </nav>
     </>
   )

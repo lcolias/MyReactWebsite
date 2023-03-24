@@ -22,9 +22,11 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
-- [ ] style the initial title landing text so its centered
+- [ ] style the navigation bar so it minimizes when scrolling
 
 ## Done ✓
 
+- [x] style the navigation bar so it is fixed at the top of the page
+- [x] style the initial title landing text so its centered
 - [x] Add all of the content to the landing page sections
 - [x] Create TODO.md
