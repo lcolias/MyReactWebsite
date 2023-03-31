@@ -20,6 +20,8 @@ Todo list and schedule of personal website functionality.
 
 ### navigation bar
 
+- [ ] style the navigation bar so it minimizes when scrolling
+
 ## In Progress
 
 - [ ] style the navigation bar so it minimizes when scrolling
