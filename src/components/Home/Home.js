@@ -48,41 +48,42 @@ function Home(props){
 
                 
                 <section ref={aboutRef} className='about'>
-                    <h2 className={`hidden ${aboutInView ? 'show' : '' }`}>about me 🤵🏻</h2>
-                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
-                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>i have an affinity for clean and simple solutions to complex and sophiscicated problems. </p>
-                    <Link to='about'> more➡️ </Link>
+
+                    <h2 className={`hiddena ${aboutInView ? 'show' : '' }`}>about me <Link to='about'>🤵🏻</Link></h2>
+                    <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
+                    <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i have an affinity for clean and simple solutions to complex and sophiscicated problems. </p>
+            
                 </section>
                  
                 <section ref={skillsRef} className='skills'>
-                    <h2 className={`hidden ${skillsInView ? 'show' : '' }`} >some skillz 💻</h2>
 
-                    <div className={`project-preview hidden ${skillsInView ? 'show' : '' }`}>
-                        <Tile > </Tile>
-                        <Tile > </Tile>
-                        <Tile > </Tile>
+                    <h2 className={`hiddens ${skillsInView ? 'show' : 'hide' }`} >some skillz <Link to='skills'>💻</Link></h2>
+
+                    <div className={`project-preview`}>
+                        <Tile className={` hiddens ${skillsInView ? 'show delay-1' : 'hide' }  `} > </Tile>
+                        <Tile className={` hiddens ${skillsInView ? 'show delay-2' : 'hide' }  `} > </Tile>
+                        <Tile className={` hiddens ${skillsInView ? 'show delay-3' : 'hide' }  `} > </Tile>
                     </div>
 
-                    <Link to='skills'> more➡️ </Link>
                 </section>
 
                 <section ref={interestsRef} className='interests'>
-                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies 🏀</h2>
-                    <Link to='interests'> more➡️ </Link>
+
+                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies <Link to='interests'>🏀</Link></h2>
+    
                 </section>
 
                 <section ref={contactRef} className='contact'>
-                    <h2 className={`hidden ${contactInView ? 'show' : '' }`}>keep in touch! 👇</h2>
-                    
-                    <ul>
-                        <li className='footer-link'><a href='https://www.linkedin.com/in/lucas-colias'><FaLinkedin /> </a></li>
-                        <li className='footer-link'><a href='https://www.instagram.com/_duke_luke_/'><FaInstagram /></a></li>
-                        <li className='footer-link'><a href='https://twitter.com/_duke_luke_'><FaTwitter />  </a></li>
-                        <li className='footer-link'><a href='https://www.facebook.com/luke.colias/'><FaFacebook /> </a></li>
-                        <li className='footer-link'><a href='mailto:lpcolias@gmail.com'><FaEnvelope /> </a></li>
-                    </ul>
 
-                    <Link to='contact'> more➡️ </Link>
+                    <h2 className={`hiddenc ${contactInView ? 'show' : 'hide' }`}>keep in touch! <Link to='contact'>👇</Link></h2>
+                    
+                    <ul className='link-container'>
+                        <li className={` hiddenc ${contactInView ? 'show delay-1' : 'hide' }  `}><a className='ft-link' href='https://www.linkedin.com/in/lucas-colias'><FaLinkedin /> </a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-2' : 'hide' }  `}><a className='ft-link' href='https://www.instagram.com/_duke_luke_/'><FaInstagram /></a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-3' : 'hide' }  `}><a className='ft-link' href='https://twitter.com/_duke_luke_'><FaTwitter />  </a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-4' : 'hide' }  `}><a className='ft-link' href='https://www.facebook.com/luke.colias/'><FaFacebook /> </a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-5' : 'hide' }  `}><a className='ft-link' href='mailto:lpcolias@gmail.com'><FaEnvelope /> </a></li>
+                    </ul>
 
                 </section>
 
