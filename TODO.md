@@ -6,17 +6,19 @@ Todo list and schedule of personal website functionality.
 
 ### landing page
 
-- [ ] style the about-me landing text so animates in from the right side of the viewport
-- [ ] style the some-skillz text and landing tiles so they animate into frame from above or below depending if you're scolling down or up respectively
-- [ ] style the keep-in-touch landing text and icons so they animates in one at a time
-
 ### about page
 
 ### skills page
 
+- [] Add all of the content to the landing page sections
+
 ### interests page
 
+- [] Add all of the content to the landing page sections
+
 ### contact page
+
+- [] Add all of the content to the landing page sections
 
 ### navigation bar
 
@@ -24,6 +26,9 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
+- [ ] style the about-me landing text so animates in from the right side of the viewport
+- [ ] style the some-skillz text and landing tiles so they animate into frame from above or below depending if you're scolling down or up respectively
+- [ ] style the keep-in-touch landing text and icons so they animates in one at a time
 - [ ] style the navigation bar so it minimizes when scrolling
 
 ## Done ✓

@@ -11,7 +11,7 @@ function Skills(){
   useEffect(() => {
     fetch('https://api.github.com/user/repos?type=public', {
       headers: {
-        Authorization: 'Bearer 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'
+        Authorization: 'Bearer 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'
       }
     })
     .then(response => response.json())

@@ -75,11 +75,11 @@ function Home(props){
                     <h2 className={`hidden ${contactInView ? 'show' : '' }`}>keep in touch! 👇</h2>
                     
                     <ul>
-                        <li className='footer-link'><FaLinkedin /></li>
-                        <li className='footer-link'><FaInstagram /></li>
-                        <li className='footer-link'><FaTwitter /></li>
-                        <li className='footer-link'><FaFacebook /></li>
-                        <li className='footer-link'><FaEnvelope /></li>
+                        <li className='footer-link'><a href='https://www.linkedin.com/in/lucas-colias'><FaLinkedin /> </a></li>
+                        <li className='footer-link'><a href='https://www.instagram.com/_duke_luke_/'><FaInstagram /></a></li>
+                        <li className='footer-link'><a href='https://twitter.com/_duke_luke_'><FaTwitter />  </a></li>
+                        <li className='footer-link'><a href='https://www.facebook.com/luke.colias/'><FaFacebook /> </a></li>
+                        <li className='footer-link'><a href='mailto:lpcolias@gmail.com'><FaEnvelope /> </a></li>
                     </ul>
 
                     <Link to='contact'> more➡️ </Link>
