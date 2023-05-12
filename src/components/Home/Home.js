@@ -16,7 +16,7 @@ function Home(props){
         threshold: 0.5
     });
     
-    // Creates an intersection observer to apply to HTML elements
+    // Creates an intersection observer to apply to HTML elements by section {intro, about, skills, interests, contact}
     const { ref: introRef, inView: introInview, entry: introEntry  } = useInView({
         threshold: 0.5
     });  
@@ -37,7 +37,7 @@ function Home(props){
         <>
             <section className='main-container'>
                 
-
+                {/* intro section: introRef observer reference triggers basic translateX transition animation */}
                 <section ref={introRef} className='introduction'>
 
                     <h1 className={`hidden ${introInview ? 'show' : '' }`}>howdy patna's</h1>
@@ -46,43 +46,49 @@ function Home(props){
 
                 </section>
 
-                
+                {/* about section: aboutRef observer reference triggers similar basic translateX transition animation */}
                 <section ref={aboutRef} className='about'>
-                    <h2 className={`hidden ${aboutInView ? 'show' : '' }`}>about me 🤵🏻</h2>
-                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
-                    <p  className={`hidden ${aboutInView ? 'show' : '' }`}>i have an affinity for clean and simple solutions to complex and sophiscicated problems. </p>
-                    <Link to='about'> more➡️ </Link>
+
+                    <h2 className={`hiddena ${aboutInView ? 'show' : '' }`}>about me <Link className='pg-link' to='about'>🤵🏻</Link></h2>
+                    <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company-font'>NORTHROP GRUMMAN</b>. </p>
+                    <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i have an affinity for clean and simple solutions to complex and sophiscicated problems. </p>
+            
                 </section>
                  
+                {/* skills section: skillsRef observer reference triggers a staggered translateY transition animation adding a 'delay-n' css class. 
+                    'hide' is applied to quickly reset the observed elements to their initial hidden state*/}
                 <section ref={skillsRef} className='skills'>
-                    <h2 className={`hidden ${skillsInView ? 'show' : '' }`} >some skillz 💻</h2>
 
-                    <div className={`project-preview hidden ${skillsInView ? 'show' : '' }`}>
-                        <Tile > </Tile>
-                        <Tile > </Tile>
-                        <Tile > </Tile>
+                    <h2 className={`hiddens ${skillsInView ? 'show' : 'hide' }`} >some skillz <Link className='pg-link' to='skills'>💻</Link></h2>
+
+                    <div className={`project-preview`}>
+                        <Tile className={` hiddens ${skillsInView ? 'show delay-1' : 'hide' }  `} > </Tile>
+                        <Tile className={` hiddens ${skillsInView ? 'show delay-2' : 'hide' }  `} > </Tile>
+                        <Tile className={` hiddens ${skillsInView ? 'show delay-3' : 'hide' }  `} > </Tile>
                     </div>
 
-                    <Link to='skills'> more➡️ </Link>
                 </section>
-
+                
+                {/* interests section: interestsRef observer reference triggers similar basic translateX transition animation */}
                 <section ref={interestsRef} className='interests'>
-                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies 🏀</h2>
-                    <Link to='interests'> more➡️ </Link>
+
+                    <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies <Link className='pg-link' to='interests'>🏀</Link></h2>
+    
                 </section>
 
+                {/* contact section: contactRef observer reference triggers a similar staggered translateY transition animation adding a 'delay-n' css class. 
+                    'hide' is applied to quickly reset the observed elements to their initial hidden state*/}
                 <section ref={contactRef} className='contact'>
-                    <h2 className={`hidden ${contactInView ? 'show' : '' }`}>keep in touch! 👇</h2>
-                    
-                    <ul>
-                        <li className='footer-link'><FaLinkedin /></li>
-                        <li className='footer-link'><FaInstagram /></li>
-                        <li className='footer-link'><FaTwitter /></li>
-                        <li className='footer-link'><FaFacebook /></li>
-                        <li className='footer-link'><FaEnvelope /></li>
-                    </ul>
 
-                    <Link to='contact'> more➡️ </Link>
+                    <h2 className={`hiddenc ${contactInView ? 'show' : 'hide' }`}>keep in touch! <Link className='pg-link' to='contact'>👇</Link></h2>
+                    
+                    <ul className='link-container'>
+                        <li className={` hiddenc ${contactInView ? 'show delay-1' : 'hide' }  `}><a className='ft-link' href='https://www.linkedin.com/in/lucas-colias'><FaLinkedin /> </a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-2' : 'hide' }  `}><a className='ft-link' href='https://www.instagram.com/_duke_luke_/'><FaInstagram /></a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-3' : 'hide' }  `}><a className='ft-link' href='https://twitter.com/_duke_luke_'><FaTwitter />  </a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-4' : 'hide' }  `}><a className='ft-link' href='https://www.facebook.com/luke.colias/'><FaFacebook /> </a></li>
+                        <li className={` hiddenc ${contactInView ? 'show delay-5' : 'hide' }  `}><a className='ft-link' href='mailto:lpcolias@gmail.com'><FaEnvelope /> </a></li>
+                    </ul>
 
                 </section>
 
