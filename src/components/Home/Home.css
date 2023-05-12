@@ -57,6 +57,16 @@ h1,h2,p {
     margin: 0;
 }
 
+a.pg-link {
+
+}
+
+a.pg-link:hover {
+    
+    transform: scale(1.2);
+
+}
+
 .ft-link {
     margin: 4px;
     font-size: 2em;

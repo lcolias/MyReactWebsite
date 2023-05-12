@@ -26,6 +26,7 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
+- [ ] add hover animations to all of the links on the home page.
 - [ ] style the navigation bar so it minimizes when scrolling
 
 ## Done ✓
