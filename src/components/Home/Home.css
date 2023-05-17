@@ -58,13 +58,12 @@ h1,h2,p {
 }
 
 a.pg-link {
-
+    display: inline-block; /* Ensures the link behaves as an inline element BIG TIME SOLUTION!*/
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
 a.pg-link:hover {
-    
-    transform: scale(1.2);
-
+    transform: scale(1.2); /* Increase the size of the link image on hover */
 }
 
 .ft-link {
