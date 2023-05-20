@@ -37,8 +37,11 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
+- [] V.0.1 Get github api to link repository content into project tiles, make sure there is no dependancy errors with the API Token.
+
 ## Done ✓
 
+- ---^ 5/17/2023 ^---
 - [x] V.0.1 add basic hover animations to all of the links on the home page.
 - [x] V.0.1 style the keep-in-touch landing text and icons so they animates in one at a time
 - [x] V.0.1 style the some-skillz text and landing tiles so they animate into frame from above or below depending if you're scolling down or up respectively
