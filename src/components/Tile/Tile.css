@@ -17,7 +17,7 @@
 
 .tile-container img {
     display: block;
-    margin: 0 auto;
+    margin: 2px auto;
     height: 40%;
     width: 40%;
 }
@@ -34,4 +34,6 @@
     margin: 4px;
     color: #727272;
     font-size: 1.25rem;
+
+    text-align: left;
 }

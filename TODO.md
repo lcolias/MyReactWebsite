@@ -13,18 +13,18 @@ Todo list and schedule of personal website functionality.
 ### about page
 
 - [] V.0.2 Add transition animations to about me content and education content.
+- [] V.0.2 Revisit about me grid layout so data formats seemlessly between screen sizes.
+- [] V.0.2 Add Logo for HighSchool in education section.
 
 ### skills page
 
-- [] V.0.1 Get github api to link repository content into project tiles, make sure there is no dependancy errors with the API Token.
+- [] V.0.2 Add grid animations for when the page loads and when the project tiles are hovered over.
+- []
+- [] V.0.2 Add more projects!!! CODE MORE <3
 
 ### interests page
 
-- [] V.0.1 Add sub section content to the interests page.
-
 ### contact page
-
-- [] V.0.1 Add all of the content to the contact page sections.
 
 ### navigation bar
 
@@ -33,14 +33,21 @@ Todo list and schedule of personal website functionality.
 
 ### other items
 
+- [ ] V.0.1 add a hook that takes you to the top of each page when switching pages.
+- [ ] (init launch) once all V.0.1 tasks are complete, launch initial website using github pages.
 - [ ] V.0.2 add media queries to all CSS for other device sizes.
+- [ ] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
 
 ## In Progress
 
-- [] V.0.1 Get github api to link repository content into project tiles, make sure there is no dependancy errors with the API Token.
+- [] V.0.1 Add all of the contact page links .
+- [] V.0.1 Add a message section so that people can fillout a direct message to me.
 
 ## Done ✓
 
+- ---^ 6/5/2023 ^---
+- [x] V.0.1 Add sub section content to the interests page.
+- [x] V.0.1 Get github api to link repository content into project tiles, make sure there is no dependancy errors with the API Token.
 - ---^ 5/17/2023 ^---
 - [x] V.0.1 add basic hover animations to all of the links on the home page.
 - [x] V.0.1 style the keep-in-touch landing text and icons so they animates in one at a time

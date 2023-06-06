@@ -42,7 +42,7 @@ function Home(props){
 
                     <h1 className={`hidden ${introInview ? 'show' : '' }`}>howdy patna's</h1>
                     <h2 className={`hidden ${introInview ? 'show' : '' }`}>the name's luke</h2>
-                    <h1 className={`hidden ${introInview ? 'show' : '' }`}>🤠</h1>
+                    <h1 className={`hidden ${introInview ? 'show' : '' }`}><Link className='pg-link' to=''>🤠</Link></h1>
 
                 </section>
 
@@ -80,7 +80,7 @@ function Home(props){
                     'hide' is applied to quickly reset the observed elements to their initial hidden state*/}
                 <section ref={contactRef} className='contact'>
 
-                    <h2 className={`hiddenc ${contactInView ? 'show' : 'hide' }`}>keep in touch! <Link className='pg-link' to='contact'>👇</Link></h2>
+                    <h2 className={`hiddenc ${contactInView ? 'show' : 'hide' }`}>lets keep in touch! <Link className='pg-link' to='contact'>👇</Link></h2>
                     
                     <ul className='link-container'>
                         <li className={` hiddenc ${contactInView ? 'show delay-1' : 'hide' }  `}><a className='ft-link' href='https://www.linkedin.com/in/lucas-colias'><FaLinkedin /> </a></li>

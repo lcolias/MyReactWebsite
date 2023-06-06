@@ -3,21 +3,9 @@ import React, { useState, useEffect, useDebugValue } from "react";
 import "./Skills.css";
 
 import Tile from '../Tile/Tile';
+import GitHubUserRepos from "../External-Data/GitHubUserRepos";
 
 function Skills(){
-
-  const [repos, setRepos] = useState([]);
-
-  useEffect(() => {
-    fetch('https://api.github.com/user/repos?type=public', {
-      headers: {
-        Authorization: 'Bearer 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'
-      }
-    })
-    .then(response => response.json())
-    .then(data => setRepos(data))
-    .catch(error => console.error(error));
-  }, []);
 
   return(
     <>
@@ -26,19 +14,26 @@ function Skills(){
 
         <section className="Projects">
 
-          <h1>My GitHub Repositories</h1>
+          <h1>projects</h1>
             
-          <ul>
-          {repos.map(repo => (
-              <li key={repo.id}>
-                <a href={repo.html_url}>{repo.name}</a>
-              </li>
-            ))}
-          </ul>
-
+          <GitHubUserRepos username="lcolias" className={`grid`}/>
+         
         </section>
 
         <section className="Languages">
+
+          <h1>languages | frameworks | technologies</h1>
+
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>arduino</li>
+            <li>raspberry pi</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Python</li>
+          </ul>
 
         </section>
       </div>
