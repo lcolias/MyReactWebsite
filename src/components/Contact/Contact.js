@@ -7,8 +7,18 @@ import Navbar from "../Navbar/Navbar";
 function Contact(){
     return(
         <>
-            
-            <h1>Contact Page!</h1>
+            <section className="contact-page">
+
+                <div className="mailer">
+                    <h1>contact me</h1>
+                    <h2>coming soon...</h2>
+                </div>
+
+                <div className="social-links">
+                    <h2>...links...</h2>
+                </div>
+
+            </section>
         </>
     );
 }
