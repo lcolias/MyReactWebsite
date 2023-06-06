@@ -1,10 +1,11 @@
 import React, {useState, useEffect, useReducer} from "react";
+import axios from "axios";
+
 
 import "./About.css";
 
 import longBeachLogo from '../../images/longBeachLogo.svg';
 import mtSacLogo from '../../images/mtSacLogo.png';
-               
 
 function GitHubUser({login}) {
     const [data, setData] = useState(null);
@@ -81,13 +82,13 @@ function About({login}) {
 
           <div className="section-content-background">
 
-            <h2>A bit about Me!</h2>
+            <h2>a bit about me!</h2>
 
               <div className="section-content-flex ">
 
                 <p className="section-content-item p-text-format">
                   Hello World, my name is <em>Lucas</em>, but I usually go by Luke. I am currently working as a Software Engineer at Northrup Grumman. 
-                  My role there involves designing and implementing updates for the F-35 Joint Stike Fighter (JSF). My favorite moments when working 
+                  My role there involves supporting the Joint Strike Fighter (JSF) program. My favorite moments when working 
                   on any project happen when I’m able to develop Simple and Effective code. I also understand that sometimes things are complicated 
                   and those are the times I use all of resources afforded to me to figure out a solution. I’m a simple man who appreciates simple things, 
                   and I try to maintain that mindset with everything I do. Please checkout my “Contact” page for info on how to get in touch!
@@ -112,7 +113,7 @@ function About({login}) {
           
           <div className="section-content-background">
               
-              <h2>Education</h2>
+              <h2>education</h2>
 
               {/*<!-- Copy this whole <section> block to add more schools. -->*/}
               <div >
