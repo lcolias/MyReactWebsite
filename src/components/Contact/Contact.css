@@ -1,0 +1,48 @@
+section {
+    min-height: 0;
+}
+
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+    width: 40%;
+
+    text-align: left;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .info-sec {
+    width: 35%;
+  }
+  
+  .form-sec {
+    width: 65%;
+  }
+  
+  .link-sec {
+    width: 100%;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 50%;
+    margin: 0 auto;
+}

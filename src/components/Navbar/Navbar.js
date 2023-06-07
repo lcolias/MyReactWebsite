@@ -17,8 +17,10 @@ function Navbar() {
     <>
         <nav className='navbar'>
 
-          <Link to='' className='navbar-logo'> lucas colias </Link>
-          
+          <div className='navbar-logo'>
+            <Link to='' > lucas colias </Link>
+          </div>
+
           <ul className={toggled ? 'active navbar-link-container' : 'navbar-link-container'}> 
             <li className='navbar-link'><Link to=''         ><FaHome /><div>home</div></Link></li>
             <li className='navbar-link'><Link to='about'    ><FaInfoCircle /><div>about</div></Link></li>
