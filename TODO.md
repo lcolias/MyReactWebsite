@@ -38,11 +38,12 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
-- [] V.0.1 Add all of the contact page links .
-- [] V.0.1 Add a form section so that people can fillout a direct message to me.
+- [] V.0.1 Signup for EmailJS and incoorporate api.
 
 ## Done ✓
 
+- [x] V.0.1 Add all of the contact page links .
+- [x] V.0.1 Add a form section so that people can fillout a direct message to me.
 - [x] V.0.1 add a hook that takes you to the top of each page when switching pages.
 - ---^ 6/5/2023 ^---
 - [x] V.0.1 Add sub section content to the interests page.
