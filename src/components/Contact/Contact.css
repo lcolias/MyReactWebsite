@@ -1,5 +1,5 @@
 section {
-    min-height: 0;
+    
 }
 
 .contact-page{
@@ -9,12 +9,7 @@ section {
 }
 
 .mailer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    min-height: 100vh;
+
     width: 40%;
 
     text-align: left;
@@ -25,16 +20,23 @@ section {
     flex-direction: row;
   }
   
-  .info-sec {
+.info-sec {
     width: 35%;
   }
   
-  .form-sec {
+.form-sec {
     width: 65%;
   }
   
-  .link-sec {
+.link-sec {
     width: 100%;
+  }
+
+.divider{
+  position: relative;
+  width: 4px;
+  background-image: linear-gradient(to bottom, transparent, #ffffff30, transparent);
+  border-radius: 1000%;
   }
 
 form {
