@@ -12,7 +12,7 @@ function Skills(){
       
       <div className="skills-page">  
 
-        <section className="Projects">
+        <section className="Projects main-container">
 
           <h1>projects</h1>
             
@@ -20,7 +20,7 @@ function Skills(){
          
         </section>
 
-        <section className="Languages">
+        <section className="Languages main-container">
 
           <h1>languages | frameworks | technologies</h1>
 

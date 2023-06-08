@@ -11,13 +11,6 @@ body {
     background-color: black;
 }
 
-section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-}
-
 h1 {
     font-size: 4rem;
 }
@@ -32,6 +25,13 @@ p {
 
 h1,h2,p {
     padding: 16px;
+}
+
+.main-container{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 .project-preview {
