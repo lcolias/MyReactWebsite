@@ -21,30 +21,86 @@ section {
   }
   
 .info-sec {
-    width: 35%;
-  }
-  
-.form-sec {
-    width: 65%;
-  }
-  
-.link-sec {
-    width: 100%;
+    width: 40%;
   }
 
 .divider{
-  position: relative;
-  width: 4px;
-  background-image: linear-gradient(to bottom, transparent, #ffffff30, transparent);
-  border-radius: 1000%;
+    position: relative;
+    width: 4px;
+    background-image: linear-gradient(to bottom, transparent, #ffffff30, transparent);
+    border-radius: 1000%;
+}
+  
+  
+.form-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  
+  margin: 0 auto;
   }
 
-form {
+.form-sec form{
+    
+    width: 90%;
+    
+    margin: 0 auto;
+  }
+
+.form-field {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    height: 50%;
-    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+.form-field label {
+    margin-bottom: 0.5rem;
+  }
+
+.form-field textarea {
+  height: 8em;
+  }
+
+.form-field input,
+.form-field textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem;
+  width: 100%;
 }
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-field input:-webkit-autofill,
+.form-field textarea:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white;
+}
+
+/* For Firefox */
+.form-field input:-moz-autofill,
+.form-field textarea:-moz-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  -moz-text-fill-color: white;
+}
+
+button[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+  
+.link-sec {
+    width: 100%;
+    margin: 1em auto;
+}
+
