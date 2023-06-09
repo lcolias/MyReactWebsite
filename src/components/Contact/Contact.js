@@ -17,6 +17,13 @@ function Contact(){
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setEmailError('');
+
+    if (!validateEmail(email)) {
+      setEmailError('Please enter a valid email address');
+      return;
+    }
+
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current)
     .then((result) => {
         console.log(result.text);
@@ -24,15 +31,7 @@ function Contact(){
         console.log(error.text);
     });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email address');
-      return;
-    }
-
-    // Clear any previous errors
-    setEmailError('');
+    
 
   };
 
