@@ -25,13 +25,13 @@ function App(props) {
           <Navbar />
 
           <Routes>
-            <Route path="/"         element={<Home name="Luke"/>}/>
-            <Route path="/about"    element={<About login="lcolias"/>}/>
-            <Route path="/skills"   element={<Skills login="lcolias"/>}/>
-            <Route path="/interests"element={<Funstuff />}/>
-            <Route path="/contact"  element={<Contact />}/>
-            <Route path="/secret"   element={<Secret />}/>
-            <Route path="*"         element={<Whoops404 />} />
+            <Route path="/MyReactWebsite/"         element={<Home name="Luke"/>}/>
+            <Route path="/MyReactWebsite/about"    element={<About login="lcolias"/>}/>
+            <Route path="/MyReactWebsite/skills"   element={<Skills login="lcolias"/>}/>
+            <Route path="/MyReactWebsite/interests"element={<Funstuff />}/>
+            <Route path="/MyReactWebsite/contact"  element={<Contact />}/>
+            <Route path="/MyReactWebsite/secret"   element={<Secret />}/>
+            <Route path="/MyReactWebsite/*"        element={<Whoops404 />} />
           </Routes>
         </div>
       </>
