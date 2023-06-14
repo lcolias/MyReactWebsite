@@ -6,20 +6,20 @@ Todo list and schedule of personal website functionality.
 
 ### landing page
 
-- [] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)
-- [] V.0.2 Generate content from Github to display into skills preview section tiles.
-- [] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
+- [ ] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)
+- [ ] V.0.2 Generate content from Github to display into skills preview section tiles.
+- [ ] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
 
 ### about page
 
-- [] V.0.2 Add transition animations to about me content and education content.
-- [] V.0.2 Revisit about me grid layout so data formats seemlessly between screen sizes.
-- [] V.0.2 Add Logo for HighSchool in education section.
+- [ ] V.0.2 Add transition animations to about me content and education content.
+- [ ] V.0.2 Revisit about me grid layout so data formats seemlessly between screen sizes.
+- [ ] V.0.2 Add Logo for HighSchool in education section.
 
 ### skills page
 
-- [] V.0.2 Add grid animations for when the page loads and when the project tiles are hovered over.
-- [] V.0.2 Add more projects!!! CODE MORE <3
+- [ ] V.0.2 Add grid animations for when the page loads and when the project tiles are hovered over.
+- [ ] V.0.2 Add more projects!!! CODE MORE <3
 
 ### interests page
 
@@ -32,15 +32,16 @@ Todo list and schedule of personal website functionality.
 
 ### other items
 
-- [ ] (init launch) once all V.0.1 tasks are complete, launch initial website using github pages.
 - [ ] V.0.2 add media queries to all CSS for other device sizes.
 - [ ] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
 - [ ] V.0.2 Update the project tiles to be more refined.(add shadow, spacing identifiers)
+- [ ] (alpha V.0.2 launch) once all V.0.2 tasks are complete, launch updated website using github pages.
 
 ## In Progress
 
 ## Done ✓
 
+- [x] (init launch) once all V.0.1 tasks are complete, launch initial website using github pages.
 - [x] V.0.1 Signup for EmailJS and incoorporate api.
 - ---^ 6/13/2023 ^---
 - [x] V.0.1 Add all of the contact page links .
