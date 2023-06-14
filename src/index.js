@@ -9,7 +9,7 @@ import ScrollToTop from './effects/ScrollToTop/ScrollToTop';
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename='/MyReactWebsite'>
       <ScrollToTop />
       <App authorized={true}/>
     </Router>,
