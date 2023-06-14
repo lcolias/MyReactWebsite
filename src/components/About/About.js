@@ -1,6 +1,4 @@
-import React, {useState, useEffect, useReducer} from "react";
-import axios from "axios";
-
+import React, {useState, useEffect} from "react";
 
 import "./About.css";
 
@@ -69,11 +67,6 @@ function GitHubUser({login}) {
 
 function About({login}) {
 
-    const [checked, toggle] = useReducer(
-        (checked) => !checked, 
-        false
-    );
-
     return(
       <>
         <section className="section-content-wrapper">
@@ -129,7 +122,7 @@ function About({login}) {
               </div>
 
               <div>
-                <img></img>
+                <img alt='Ayala High School Logo' />
                 <h3>Ruben S. Ayala High School - Chino Hills, CA</h3>
                 <p>High School Diploma, 2010-14</p>
               </div>

@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useDebugValue } from "react";
+import React from "react";
 
 import "./Skills.css";
 
-import Tile from '../Tile/Tile';
+
 import GitHubUserRepos from "../External-Data/GitHubUserRepos";
 
 function Skills(){

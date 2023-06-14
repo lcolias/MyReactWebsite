@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
 
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaEnvelope} from 'react-icons/fa';
@@ -26,10 +26,10 @@ function Contact(){
 
   };
 
-  const validateEmail = (email) => {
+  /*const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
-  };
+  };*/
 
   return (
     <>
