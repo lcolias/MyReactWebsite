@@ -7,31 +7,20 @@ import "./Contact.css";
 
 function Contact(){
 
+  
   const form = useRef();
-    
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [emailError, setEmailError] = useState('');
+  
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    setEmailError('');
-
-    if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email address');
-      return;
-    }
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current)
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-
-    
+  emailjs.sendForm('service_zvtafyi', 'template_is5s5pg', form.current, 'ywzY8BXH5WLpIR_ag')
+  .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+  
 
   };
 
@@ -60,7 +49,7 @@ function Contact(){
 
             <section className='form-sec'> 
 
-              <form ref={form} onSubmit={sendEmail}>
+              <form onSubmit={handleSubmit} ref={form}>
                         
                 <div className="form-field">
                   <label htmlFor="name">Name:</label>
@@ -89,7 +78,7 @@ function Contact(){
                   />
                 </div>
 
-                <button type="submit">Submit</button>
+                <button className="submit-button" type="submit">Submit</button>
 
               </form>
 
