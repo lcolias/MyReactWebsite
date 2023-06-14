@@ -92,7 +92,7 @@ section {
 }
 
 button[type="submit"] {
-  background-color: white;
+
   color: black;
   padding: 0.5rem 1rem;
   border: none;
@@ -104,3 +104,13 @@ button[type="submit"] {
     margin: 1em auto;
 }
 
+.submit-button {
+  background-color: #f0f0f0; /* Initial background color */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+
+  /* Add other button styles as needed */
+}
+
+.submit-button:active {
+  background-color: #9d2222; /* Background color when button is clicked */
+}
