@@ -7,14 +7,16 @@ import "./Contact.css";
 
 function Contact(){
 
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_EMAILJS_USER_ID;
   
   const form = useRef();
   
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  emailjs.sendForm('service_zvtafyi', 'template_is5s5pg', form.current, 'ywzY8BXH5WLpIR_ag')
+  emailjs.sendForm(serviceId, templateId, form.current, userId)
   .then((result) => {
       console.log(result.text);
   }, (error) => {
