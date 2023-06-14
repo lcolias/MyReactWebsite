@@ -1,7 +1,7 @@
 # My Personal Website React App
 
 This React project is meant to serve as my personal website as well as a tool for increasing my understanding of web development.
-A link to my website is provided here [lukecolias.com]().
+A link to my website is provided here [[lukecolias.com](https://lcolias.github.io/MyReactWebsite/)]().
 This website is hosted with []().
 
 # Getting Started with Create React App
