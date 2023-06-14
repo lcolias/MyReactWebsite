@@ -2,7 +2,7 @@
 
 This React project is meant to serve as my personal website as well as a tool for increasing my understanding of web development.
 A link to my website is provided here [https://lcolias.github.io/MyReactWebsite/](https://lcolias.github.io/MyReactWebsite/).
-This website is hosted with []().
+This website is hosted with [Github Pages](https://pages.github.com/).
 
 # Getting Started with Create React App
 
