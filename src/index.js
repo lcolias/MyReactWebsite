@@ -12,7 +12,7 @@ root.render(
     <Router basename='/MyReactWebsite'>
       <ScrollToTop />
       <App authorized={true}/>
-    </Router>,
+    </Router>
   </React.StrictMode>
 );
 

@@ -13,12 +13,11 @@ import Whoops404 from './components/ErrorPage/Whoops404';
 
 import Navbar from './components/Navbar/Navbar';
 
-function App(props) {
+function App() {
 
   const [color, setColor] = useState(null);
 
   return (
-      //<GitHubUser login="lcolias"/>
       <>
         <div className='App'>
 

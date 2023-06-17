@@ -6,7 +6,6 @@ Todo list and schedule of personal website functionality.
 
 ### landing page
 
-- [ ] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)
 - [ ] V.0.2 Generate content from Github to display into skills preview section tiles.
 - [ ] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
 
@@ -38,6 +37,8 @@ Todo list and schedule of personal website functionality.
 - [ ] (alpha V.0.2 launch) once all V.0.2 tasks are complete, launch updated website using github pages.
 
 ## In Progress
+
+- [ ] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)
 
 ## Done ✓
 
