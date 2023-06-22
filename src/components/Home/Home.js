@@ -48,7 +48,7 @@ function Home(props){
             <section ref={aboutRef} className='about main-container'>
 
                 <h2 className={`hiddena ${aboutInView ? 'show' : '' }`}>about me <Link className='pg-link' to='about'>🤵🏻</Link></h2>
-                <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company-font company-text-fill-hover'>NORTHROP GRUMMAN</b>. </p>
+                <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company'>NORTHROP GRUMMAN</b>. </p>
                 <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i have an affinity for clean and simple solutions to complex and sophiscicated problems. </p>
             
             </section>

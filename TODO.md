@@ -31,17 +31,18 @@ Todo list and schedule of personal website functionality.
 
 ### other items
 
-- [ ] V.0.2 add media queries to all CSS for other device sizes.
-- [ ] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
 - [ ] V.0.2 Update the project tiles to be more refined.(add shadow, spacing identifiers)
 - [ ] (alpha V.0.2 launch) once all V.0.2 tasks are complete, launch updated website using github pages.
 
 ## In Progress
 
-- [ ] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)
+- [ ] V.0.2 add media queries to all CSS for other device sizes.
+- [ ] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
 
 ## Done ✓
 
+- [x] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)sas
+- ---^ 6/20/2023 ^---
 - [x] (init launch) once all V.0.1 tasks are complete, launch initial website using github pages.
 - [x] V.0.1 Signup for EmailJS and incoorporate api.
 - ---^ 6/13/2023 ^---

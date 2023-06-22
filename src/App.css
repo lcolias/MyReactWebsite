@@ -1,4 +1,20 @@
 .App {
-  background-color: black;
+
 }
+
+.App::before{
+  position: absolute;
+  content: '';
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: var(--background-image);
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+
 

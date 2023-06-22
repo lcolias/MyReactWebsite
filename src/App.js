@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import useRandomGradient from './effects/useRandomGradient/useRandomGradient';
+import useBackgroundTransition from './effects/useBackgroundTransition/useBackgroundTransition';
 
 import './App.css';
 
@@ -10,20 +12,24 @@ import Funstuff from './components/Fun-Stuff/Funstuff';
 import Contact from './components/Contact/Contact';
 import Secret from './components/Secret/Secret';
 import Whoops404 from './components/ErrorPage/Whoops404';
-
 import Navbar from './components/Navbar/Navbar';
+
+
 
 function App() {
 
-  const [color, setColor] = useState(null);
+  
+  const location = useLocation();
+  const background = useRandomGradient(location);
+  // const background = useBackgroundTransition(gradient)
 
   return (
       <>
-        <div className='App'>
+        <div className='App' style={{ background }} >
 
           <Navbar />
 
-          <Routes>
+          <Routes >
             <Route path="/"         element={<Home name="Luke"/>}/>
             <Route path="/about"    element={<About login="lcolias"/>}/>
             <Route path="/skills"   element={<Skills login="lcolias"/>}/>
