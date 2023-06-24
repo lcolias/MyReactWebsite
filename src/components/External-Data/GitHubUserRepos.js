@@ -10,26 +10,27 @@ function GitHubUserRepos(props) {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    // Fetch the user's repositories using the GitHub API
-    axios.get(`https://api.github.com/users/${props.username}/repos`)
-      .then(response => {
-        // Create an array of promises to fetch readme files for each repository
-        const repoPromises = response.data.map(repo => {
+    axios.get(`https://api.github.com/users/${props.username}/repos?sort=stars&direction=desc`)
+    .then(response => {
+      let repoData = response.data;
+
+      if (props.topThree) {
+        repoData = repoData.slice(0, 3); // Get only the top three repositories
+      }
+
+        const repoPromises = repoData.map(repo => {
           return axios.get(repo.url + '/readme');
         });
 
-        // Fetch all the readme files in parallel using Promise.all
         Promise.all(repoPromises)
           .then(readmeResponses => {
-            // Combine repository data with respective readme content
-            const updatedRepos = response.data.map((repo, index) => {
+            const updatedRepos = repoData.map((repo, index) => {
               return {
                 ...repo,
                 readme: readmeResponses[index].data
               };
             });
 
-            // Update the state with the repositories and readme data
             setRepos(updatedRepos);
           })
           .catch(error => {
@@ -39,7 +40,7 @@ function GitHubUserRepos(props) {
       .catch(error => {
         console.error('Error fetching repositories:', error);
       });
-  }, [props.username]);
+  }, [props.username, props.topThree]);
 
   return (
     <>

@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaEnvelope} from 'react-icons/fa';
 
+import GitHubUserRepos from '../External-Data/GitHubUserRepos';
+
 import Tile from '../Tile/Tile';
 
 import "./Home.css"; 
@@ -59,10 +61,8 @@ function Home(props){
 
                 <h2 className={`hiddens ${skillsInView ? 'show' : 'hide' }`} >some skillz <Link className='pg-link' to='skills'>💻</Link></h2>
 
-                <div className={`project-preview`}>
-                    <Tile className={` hiddens ${skillsInView ? 'show delay-1' : 'hide' }  `} > </Tile>
-                    <Tile className={` hiddens ${skillsInView ? 'show delay-2' : 'hide' }  `} > </Tile>
-                    <Tile className={` hiddens ${skillsInView ? 'show delay-3' : 'hide' }  `} > </Tile>
+                <div className={`project-preview hiddens ${skillsInView ? 'show' : 'hide' }`}>
+                    <GitHubUserRepos username="lcolias" topThree={true} className={`flex`}/>
                 </div>
 
             </section>
@@ -70,8 +70,14 @@ function Home(props){
                 {/* interests section: interestsRef observer reference triggers similar basic translateX transition animation */}
             <section ref={interestsRef} className='interests main-container'>
 
-                <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies <Link className='pg-link' to='interests'>🏀</Link></h2>
-    
+                <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies</h2>
+
+                <ul className='link-container'>
+                    <li className={` hidden ${interestsInView ? 'show delay-1' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state: {scrollId:"sports"}} } >🏀</Link></li>
+                    <li className={` hidden ${interestsInView ? 'show delay-2' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state: {scrollId:"cards"}} } >🎴</Link></li>
+                    <li className={` hidden ${interestsInView ? 'show delay-3' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state: {scrollId:"music"}} } >🎵</Link></li>
+                </ul>
+
             </section>
 
                 {/* contact section: contactRef observer reference triggers a similar staggered translateY transition animation adding a 'delay-n' css class. 

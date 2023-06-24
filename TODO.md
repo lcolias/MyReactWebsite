@@ -6,9 +6,6 @@ Todo list and schedule of personal website functionality.
 
 ### landing page
 
-- [ ] V.0.2 Generate content from Github to display into skills preview section tiles.
-- [ ] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
-
 ### about page
 
 - [ ] V.0.2 Add transition animations to about me content and education content.
@@ -31,16 +28,18 @@ Todo list and schedule of personal website functionality.
 
 ### other items
 
+- [ ] V.0.2 add media queries to all CSS for other device sizes.
 - [ ] V.0.2 Update the project tiles to be more refined.(add shadow, spacing identifiers)
 - [ ] (alpha V.0.2 launch) once all V.0.2 tasks are complete, launch updated website using github pages.
 
 ## In Progress
 
-- [ ] V.0.2 add media queries to all CSS for other device sizes.
-- [ ] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
+- [ ] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
 
 ## Done ✓
 
+- [x] V.0.2 Generate content from Github to display into skills preview section tiles.
+- [x] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
 - [x] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)sas
 - ---^ 6/20/2023 ^---
 - [x] (init launch) once all V.0.1 tasks are complete, launch initial website using github pages.

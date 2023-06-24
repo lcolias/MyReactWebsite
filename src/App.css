@@ -1,20 +1,35 @@
 .App {
-
+  position: relative;
+  z-index: 1;
 }
 
 .App::before{
   position: absolute;
   content: '';
-  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  background-image: var(--before-gradient);
   z-index: -1;
-  background-image: var(--background-image);
-  transition: opacity 0.5s linear;
-  opacity: 0;
+  transition: opacity 1s linear;
+  opacity: var(--opacity);
 }
 
+/*Global HTML Tag Styles*/
+h1 {
+  font-size: 4rem;
+}
 
+h2 {
+  font-size: 3rem;
+}
 
+p{
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+h1, h2, p{
+  margin: 16px;
+}

@@ -1,25 +1,31 @@
 import React from "react";
 
 import "./Funstuff.css";
+import useSmoothScroll from "../../effects/useSmoothScroll/useSmoothScroll";
 
 
 
-function Funstuff() {
+
+function Funstuff(props) {
+
+    console.log(props.state);
+    // useSmoothScroll(props.state);
+
     return(
         <>     
             <section className="interests-page">
 
-                <section className="main-container">
+                <section id="sports" className="main-container">
                     <h1>athletics</h1>
                     <h2>coming soon...</h2>
                 </section>
 
-                <section className="main-container">
+                <section id="cards" className="main-container">
                     <h1>my collection</h1>
                     <h2>coming soon...</h2>
                 </section>
 
-                <section className="main-container">
+                <section id="music" className="main-container">
                     <h1>music</h1>
                     <h2>coming soon...</h2>
                 </section>

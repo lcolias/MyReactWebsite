@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import useRandomGradient from './effects/useRandomGradient/useRandomGradient';
-import useBackgroundTransition from './effects/useBackgroundTransition/useBackgroundTransition';
 
 import './App.css';
 
@@ -18,14 +17,43 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
 
-  
+  const [currentGradient, setCurrentGradient] = useState('');
+  const [gradientTransition, setGradientTransition] = useState({})
+
   const location = useLocation();
-  const background = useRandomGradient(location);
-  // const background = useBackgroundTransition(gradient)
+  const newGradient = useRandomGradient(location);
+       
+  useEffect(() => {
+      
+    // set the --before-gradient 
+
+    setGradientTransition({
+      'background-image': currentGradient,
+      '--before-gradient': newGradient,
+      '--opacity': 1
+    })
+
+    // transition the before elment from opacity 0-1
+    const timeoutId = setTimeout(() => {
+
+      setCurrentGradient(newGradient);
+
+      setGradientTransition({
+       'background-image': newGradient,
+        '--opacity': 0
+      })
+
+    }, 1000); // 1 seconds
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+
+    }, [newGradient]);
 
   return (
       <>
-        <div className='App' style={{ background }} >
+        <div className='App' style={gradientTransition}>
 
           <Navbar />
 
