@@ -73,9 +73,32 @@ code {
 /*** GLOBAL VAR & CLASSES ***/
 :root {
 	--company-logo-color: #012699;
+	--company-name: 'NORTHROP GRUMMAN';
 }
 
-.company-font{
+.company{
     font-family: Futura Bold;
+	position: relative;
+	display: inline-block; /* Add this line */
+	white-space: nowrap; /* Add this line */
+
+	
+	
 }
 
+.company::before{
+	
+	content:var(--company-name);
+	position: absolute;
+	color: var(--company-logo-color);
+	width: 0;
+	overflow: hidden;
+  	/* offset-x | offset-y | blur-radius | color */
+	text-shadow: 0px 0px 1px var(--company-logo-color);
+	
+	transition: width 0.8s ease-in-out;
+}
+
+.company:hover::before{
+	width: 100%;
+}

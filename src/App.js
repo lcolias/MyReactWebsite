@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import useRandomGradient from './effects/useRandomGradient/useRandomGradient';
 
 import './App.css';
 
@@ -10,20 +11,53 @@ import Funstuff from './components/Fun-Stuff/Funstuff';
 import Contact from './components/Contact/Contact';
 import Secret from './components/Secret/Secret';
 import Whoops404 from './components/ErrorPage/Whoops404';
-
 import Navbar from './components/Navbar/Navbar';
+
+
 
 function App() {
 
-  const [color, setColor] = useState(null);
+  const [currentGradient, setCurrentGradient] = useState('');
+  const [gradientTransition, setGradientTransition] = useState({})
+
+  const location = useLocation();
+  const newGradient = useRandomGradient(location);
+       
+  useEffect(() => {
+      
+    // set the --before-gradient 
+
+    setGradientTransition({
+      'background-image': currentGradient,
+      '--before-gradient': newGradient,
+      '--opacity': 1
+    })
+
+    // transition the before elment from opacity 0-1
+    const timeoutId = setTimeout(() => {
+
+      setCurrentGradient(newGradient);
+
+      setGradientTransition({
+       'background-image': newGradient,
+        '--opacity': 0
+      })
+
+    }, 1000); // 1 seconds
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+
+    }, [newGradient]);
 
   return (
       <>
-        <div className='App'>
+        <div className='App' style={gradientTransition}>
 
           <Navbar />
 
-          <Routes>
+          <Routes >
             <Route path="/"         element={<Home name="Luke"/>}/>
             <Route path="/about"    element={<About login="lcolias"/>}/>
             <Route path="/skills"   element={<Skills login="lcolias"/>}/>
