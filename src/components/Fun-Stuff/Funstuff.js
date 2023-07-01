@@ -8,7 +8,6 @@ import useSmoothScroll from "../../effects/useSmoothScroll/useSmoothScroll";
 
 function Funstuff(props) {
 
-    console.log(props.state);
     // useSmoothScroll(props.state);
 
     return(

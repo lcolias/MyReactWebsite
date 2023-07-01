@@ -6,6 +6,8 @@ Todo list and schedule of personal website functionality.
 
 ### landing page
 
+- [ ] V.0.3 Transition from the interest section Links into their corresponding sections on the interests page.
+
 ### about page
 
 - [ ] V.0.2 Add transition animations to about me content and education content.
@@ -34,10 +36,10 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
-- [ ] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
-
 ## Done ✓
 
+- ---^ 6/27/2023 ^---
+- [x] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
 - [x] V.0.2 Generate content from Github to display into skills preview section tiles.
 - [x] V.0.2 add a hook that changes the color of the backgrtound depending on the webpage.
 - [x] V.0.2 Add hover animation to NG Company Logo that applys a color change transition to on hover. (Use company branding color)sas

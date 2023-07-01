@@ -73,9 +73,9 @@ function Home(props){
                 <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies</h2>
 
                 <ul className='link-container'>
-                    <li className={` hidden ${interestsInView ? 'show delay-1' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state: {scrollId:"sports"}} } >🏀</Link></li>
-                    <li className={` hidden ${interestsInView ? 'show delay-2' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state: {scrollId:"cards"}} } >🎴</Link></li>
-                    <li className={` hidden ${interestsInView ? 'show delay-3' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state: {scrollId:"music"}} } >🎵</Link></li>
+                    <li className={` hidden ${interestsInView ? 'show delay-1' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state:{scrollId:"sports"}} } >🏀</Link></li>
+                    <li className={` hidden ${interestsInView ? 'show delay-2' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state:{scrollId:"cards"}} } >🎴</Link></li>
+                    <li className={` hidden ${interestsInView ? 'show delay-3' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state:{scrollId:"music"}} } >🎵</Link></li>
                 </ul>
 
             </section>
