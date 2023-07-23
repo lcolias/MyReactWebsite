@@ -29,7 +29,7 @@ function GitHubUser({login}) {
 
     if(data) {
 
-      console.log(data);
+      //console.log(data);
 
       return(
         <>
@@ -69,7 +69,7 @@ function About({login}) {
 
     return(
       <>
-        <section className="section-content-wrapper">
+        <section className="section-content-container">
 
           <GitHubUser login={login}/>
 
@@ -102,34 +102,34 @@ function About({login}) {
         </section>
 
         {/*<!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->*/}
-        <section className="section-content-wrapper">
+        <section className="section-content-container">
           
           <div className="section-content-background">
               
-              <h2>education</h2>
+            <h2>education</h2>
 
-              {/*<!-- Copy this whole <section> block to add more schools. -->*/}
-              <div >
+            {/*<!-- Copy this whole <section> block to add more schools. -->*/}
+            <div>
               <img src={longBeachLogo} alt='Long Beach State Logo' />
-                <h3>California State University of Long Beach - Long Beach, CA</h3>
-                <p>Bachelor of Science - Computer Science, 2019-21</p>
-              </div>
+              <h3>California State University of Long Beach - Long Beach, CA</h3>
+              <p>Bachelor of Science - Computer Science, 2019-21</p>
+            </div>
                     
-              <div>
+            <div>
               <img src={mtSacLogo} alt='Mount San Antionio College Logo' />
-                <h3>Mount San Antionio College - Walnut, CA</h3>
-                <p>Associate of Science for Transfer - Mathematics, 2014-18</p>
-              </div>
-
-              <div>
-                <img alt='Ayala High School Logo' />
-                <h3>Ruben S. Ayala High School - Chino Hills, CA</h3>
-                <p>High School Diploma, 2010-14</p>
-              </div>
-
+              <h3>Mount San Antionio College - Walnut, CA</h3>
+              <p>Associate of Science for Transfer - Mathematics, 2014-18</p>
             </div>
 
-          </section>
+            <div>
+              <img alt='Ayala High School Logo' />
+              <h3>Ruben S. Ayala High School - Chino Hills, CA</h3>
+              <p>High School Diploma, 2010-14</p>
+            </div>
+
+          </div>
+
+        </section>
         
         {/*<!-- End of education block. -->*/}   
         

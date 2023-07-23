@@ -38,6 +38,8 @@ Todo list and schedule of personal website functionality.
 
 ## Done ✓
 
+- [x] V.0.2 Refactor all of the CSS so that repeating styles are not used, class names are more specific, styles are more simplified.\
+- ---^ 7/22/2023 ^---
 - ---^ 6/27/2023 ^---
 - [x] V.0.2 Add animated sub section links into the interests preview section(1. Athletics, 2. Card Collectables, 3. music).
 - [x] V.0.2 Generate content from Github to display into skills preview section tiles.
