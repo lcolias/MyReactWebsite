@@ -38,7 +38,7 @@ function Home(props){
     return(
         <>
             {/* intro section: introRef observer reference triggers basic translateX transition animation */}
-            <section ref={introRef} className='main-container'>
+            <section ref={introRef} className='section-content-container'>
 
                 <h1 className={`hidden ${introInview ? 'show' : '' }`}>howdy patna's</h1>
                 <h2 className={`hidden ${introInview ? 'show' : '' }`}>the name's luke</h2>
@@ -47,7 +47,7 @@ function Home(props){
             </section>
 
             {/* about section: aboutRef observer reference triggers similar basic translateX transition animation */}
-            <section ref={aboutRef} className='about main-container'>
+            <section ref={aboutRef} className='about section-content-container'>
 
                 <h2 className={`hiddena ${aboutInView ? 'show' : '' }`}>about me <Link className='pg-link' to='about'>🤵🏻</Link></h2>
                 <p  className={`hiddena ${aboutInView ? 'show' : '' }`}>i'm a software engineer currently working at <b className='company'>NORTHROP GRUMMAN</b>. </p>
@@ -57,9 +57,9 @@ function Home(props){
                  
                 {/* skills section: skillsRef observer reference triggers a staggered translateY transition animation adding a 'delay-n' css class. 
                     'hide' is applied to quickly reset the observed elements to their initial hidden state*/}
-            <section ref={skillsRef} className='skills main-container'>
+            <section ref={skillsRef} className='skills section-content-container'>
 
-                <h2 className={`hiddens ${skillsInView ? 'show' : 'hide' }`} >some skillz <Link className='pg-link' to='skills'>💻</Link></h2>
+                <h2 className={`hiddens ${skillsInView ? 'show' : 'hide' }`} >my skillz <Link className='pg-link' to='skills'>💻</Link></h2>
 
                 <div className={`project-preview hiddens ${skillsInView ? 'show' : 'hide' }`}>
                     <GitHubUserRepos username="lcolias" topThree={true} className={`flex`}/>
@@ -68,9 +68,9 @@ function Home(props){
             </section>
                 
                 {/* interests section: interestsRef observer reference triggers similar basic translateX transition animation */}
-            <section ref={interestsRef} className='interests main-container'>
+            <section ref={interestsRef} className='interests section-content-container'>
 
-                <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>peep the hobbies</h2>
+                <h2 className={`hidden ${interestsInView ? 'show' : '' }`}>checkout my hobbies</h2>
 
                 <ul className='link-container'>
                     <li className={` hidden ${interestsInView ? 'show delay-1' : 'hide' }  `}><Link className='pg-link hob-link' to={{ pathname:'interests', state:{scrollId:"sports"}} } >🏀</Link></li>
@@ -82,7 +82,7 @@ function Home(props){
 
                 {/* contact section: contactRef observer reference triggers a similar staggered translateY transition animation adding a 'delay-n' css class. 
                     'hide' is applied to quickly reset the observed elements to their initial hidden state*/}
-            <section ref={contactRef} className='contact main-container'>
+            <section ref={contactRef} className='contact section-content-container'>
 
                 <h2 className={`hiddenc ${contactInView ? 'show' : 'hide' }`}>lets keep in touch! <Link className='pg-link' to='contact'>👇</Link></h2>
                     

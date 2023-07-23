@@ -33,13 +33,13 @@ function Contact(){
 
   return (
     <>
-      <div className='contact-page'>
+      <section className='section-content-container'>
 
-        <div className='mailer main-container'>
+        <div className='mailer'>
             
           <div className='side-by-side'>
 
-            <section className='info-sec'> 
+            <section className='info-sec '> 
 
               <h1>contact me</h1>
               <p>If you'd like to reach out please feel free to get in touch and I will respond as soon as possible!</p>
@@ -98,7 +98,7 @@ function Contact(){
             </ul>
           </section>
         </div>  
-      </div>
+      </section>
     </>
   );
 }

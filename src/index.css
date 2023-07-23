@@ -81,9 +81,6 @@ code {
 	position: relative;
 	display: inline-block; /* Add this line */
 	white-space: nowrap; /* Add this line */
-
-	
-	
 }
 
 .company::before{

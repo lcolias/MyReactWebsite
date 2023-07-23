@@ -3,23 +3,6 @@ em {
     font-style: italic;
 }
 
-.section-content-wrapper{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-
-    width: 90vw;
-    min-height: 100vh;
-    margin: 0 auto;
-}
-
-.section-content-background {
-    margin: 8px 0;
-    background-color: rgba(255, 255, 255, 0.222);
-    border-radius: 8px;
-}
-
 .section-content-flex {
     display: flex;
 }
