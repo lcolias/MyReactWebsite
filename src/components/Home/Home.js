@@ -5,7 +5,6 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaEnvelope} from 'react
 
 import GitHubUserRepos from '../External-Data/GitHubUserRepos';
 
-import Tile from '../Tile/Tile';
 
 import "./Home.css"; 
 
