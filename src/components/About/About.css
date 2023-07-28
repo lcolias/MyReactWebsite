@@ -3,59 +3,56 @@ em {
     font-style: italic;
 }
 
-.section-content-flex {
-    display: flex;
+.about-me{
+    width: 95%;
+    margin: 16px;
 }
 
-.section-content-item {
+.p-format{
     flex: 1;
+    text-align: justify; 
 }
 
-.p-text-format{
-    text-align: justify;
-    
+.education{
+    width: 95%;
+    min-height: 95%;
 }
 
-.main-info-grid{
+.school-grid{
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(8, 1fr);
-
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
     
+
 }
 
-.main-info{
-    font-size: 2em;
-    align-self: center;
+.school-grid div{
+    height: 100%;
+    padding: 8px 0;
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    /*border-top: 2px dotted gainsboro;*/
 }
 
-.main-info div{
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
+.school-img{
+    align-items: center;
 }
 
-.main-info img{
-    
-    width: 20vw;
-    height: auto;
-    margin: 0;
-    border-radius: 25%;
-    box-shadow: 5px 5px 5px rgb(54, 54, 54);
-    
+.img-lg{
+    height: 150px;
 }
 
-.main-info.avi{
-    grid-column-start: 2;
-    grid-column-end: 4;
+.img-sml{
+    height: 100px;
 }
 
-.main-info.fields{
-    text-align: right;
-    padding-bottom: 1em;
+.school-details{
+    padding: 16px 24px;
+    list-style-type: circle;
 }
 
-.main-info.data{
-    text-align: left;
-    grid-column-start: 5;
-    grid-column-end: 8;
+.school-details li{
+   margin: 4px;
 }
+
