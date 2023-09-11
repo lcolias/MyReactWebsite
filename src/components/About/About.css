@@ -5,7 +5,7 @@ em {
 
 .about-me{
     width: 95%;
-    margin: 16px;
+    margin: 24px 16px;
 }
 
 .p-format{
@@ -23,7 +23,7 @@ em {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
     
-
+    font-size: 1.25rem;
 }
 
 .school-grid div{
@@ -34,6 +34,21 @@ em {
     justify-content: center;
     /*border-top: 2px dotted gainsboro;*/
 }
+
+.item {
+    padding: 10px;
+  }
+  
+  /* Add a translucent line after each grid item except the last one */
+.item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.499); /* Adjust the color and opacity as needed */
+  }
 
 .school-img{
     align-items: center;

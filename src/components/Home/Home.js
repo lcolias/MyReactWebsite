@@ -1,6 +1,9 @@
 import React, {useState, useEffect, useRef} from 'react';
+
 import {Link} from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import { motion as m } from 'framer-motion';
+
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaEnvelope} from 'react-icons/fa';
 
 import GitHubUserRepos from '../External-Data/GitHubUserRepos';
@@ -35,7 +38,13 @@ function Home(props){
     });  
     
     return(
-        <>
+        <m.div 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity:0}}
+            transition={{duration: 1, ease:"easeOut"}}
+
+        >
             {/* intro section: introRef observer reference triggers basic translateX transition animation */}
             <section ref={introRef} className='section-content-container'>
 
@@ -95,7 +104,7 @@ function Home(props){
 
             </section>
         
-        </>
+        </m.div>
     );
 }
 

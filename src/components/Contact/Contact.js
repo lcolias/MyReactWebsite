@@ -1,6 +1,8 @@
 import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
 
+import { motion as m } from 'framer-motion';
+
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaEnvelope} from 'react-icons/fa';
 
 import "./Contact.css";
@@ -32,7 +34,13 @@ function Contact(){
   };*/
 
   return (
-    <>
+    <m.div 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity:0}}
+            transition={{duration: 0.5, ease:"easeOut"}}
+
+    >
       <section className='section-content-container'>
 
         <div className='mailer'>
@@ -99,7 +107,7 @@ function Contact(){
           </section>
         </div>  
       </section>
-    </>
+    </m.div>
   );
 }
 

@@ -10,10 +10,6 @@ Todo list and schedule of personal website functionality.
 
 ### about page
 
-- [ ] V.0.2 Add transition animations to about me content and education content.
-- [ ] V.0.2 Revisit about me grid layout so data formats seemlessly between screen sizes.
-- [ ] V.0.2 Add Logo for HighSchool in education section.
-
 ### skills page
 
 - [ ] V.0.2 Add grid animations for when the page loads and when the project tiles are hovered over.
@@ -30,14 +26,18 @@ Todo list and schedule of personal website functionality.
 
 ### other items
 
-- [ ] V.0.2 add media queries to all CSS for other device sizes.
 - [ ] V.0.2 Update the project tiles to be more refined.(add shadow, spacing identifiers)
 - [ ] (alpha V.0.2 launch) once all V.0.2 tasks are complete, launch updated website using github pages.
 
 ## In Progress
 
+- [ ] V.0.2 add media queries to all CSS for other device sizes.
+
 ## Done ✓
 
+- [x] V.0.2 Add transition animations to about me content and education content.
+- [x] V.0.2 Add Logo for HighSchool in education section.
+- ---^ 9/1/2023 ^---
 - [x] V.0.2 Refactor all of the CSS so that repeating styles are not used, class names are more specific, styles are more simplified.\
 - ---^ 7/22/2023 ^---
 - ---^ 6/27/2023 ^---

@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 
+import { motion as m } from 'framer-motion';
+
 import "./About.css";
 import GitHubUser from "../External-Data/GitHubUser";
 
@@ -12,7 +14,13 @@ import ayalaLogo from '../../images/rubenayala.png';
 function About({login}) {
 
     return(
-      <>
+      <m.div 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity:0}}
+            transition={{duration: 0.5, ease:"easeOut"}}
+
+      >
         <section className="section-content-container">
 
           <GitHubUser login={login}/>
@@ -54,10 +62,10 @@ function About({login}) {
 
             {/*<!-- Copy this whole <section> block to add more schools. -->*/}
             <div className="school-grid">
-              <div className='school-img'>
+              <div className='school-img item'>
                 <img className='img-sml' src={longBeachLogo} alt='Long Beach State Logo' />
               </div>
-              <div>
+              <div className='item'>
                 <h3>Bachelor of Science in Computer Science, California State University of Long Beach - Long Beach, CA</h3>
                 <ul className='school-details'>
                   <li>introduced to lower level programming applications: operating systems, compilers, malware</li>
@@ -67,10 +75,10 @@ function About({login}) {
                 </ul>
               </div>
 
-              <div className='school-img'>
+              <div className='school-img item'>
                 <img className='img-lg' src={mtSacLogo} alt='Mount San Antionio College Logo' />
               </div>
-              <div>
+              <div className='item'>
                 <h3>Associate of Science for Transfer in Mathematics, Mount San Antionio College - Walnut, CA</h3>
                 <ul className='school-details'>
                   <li>introduced to programming</li>
@@ -80,10 +88,10 @@ function About({login}) {
                 </ul>
               </div>
 
-              <div className='school-img'>
+              <div className='school-img item'>
                 <img className='img-lg' src={ayalaLogo} alt='Ayala High School Logo' />
               </div>
-              <div>
+              <div className='item'>
                 <h3>High School Diploma, Ruben S. Ayala High School - Chino Hills, CA</h3>
               </div>
 
@@ -95,7 +103,7 @@ function About({login}) {
         
         {/*<!-- End of education block. -->*/}   
         
-        </>
+        </m.div>
     );
 }
 
