@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import useRandomGradient from './effects/useRandomGradient/useRandomGradient';
+import { AnimatePresence } from 'framer-motion';
 
 import './App.css';
 
@@ -22,6 +23,8 @@ function App() {
 
   const location = useLocation();
   const newGradient = useRandomGradient(location);
+
+  const locationArr = location.pathname?.split("/") ?? [];
        
   useEffect(() => {
       
@@ -56,16 +59,18 @@ function App() {
         <div className='App' style={gradientTransition}>
 
           <Navbar />
-
-          <Routes >
-            <Route path="/"         element={<Home name="Luke"/>}/>
-            <Route path="/about"    element={<About login="lcolias"/>}/>
-            <Route path="/skills"   element={<Skills login="lcolias"/>}/>
-            <Route path="/interests"element={<Funstuff />}/>
-            <Route path="/contact"  element={<Contact />}/>
-            <Route path="/secret"   element={<Secret />}/>
-            <Route path="*"         element={<Whoops404 />} />
-          </Routes>
+          <AnimatePresence initial={false} mode='wait'>
+            <Routes location={location} key={locationArr[1]}>
+              <Route path="/"         element={<Home name="Luke"/>}/>
+              <Route path="/about"    element={<About login="lcolias"/>}/>
+              <Route path="/skills"   element={<Skills login="lcolias"/>}/>
+              <Route path="/interests"element={<Funstuff />}/>
+              <Route path="/contact"  element={<Contact />}/>
+              <Route path="/secret"   element={<Secret />}/>
+              <Route path="*"         element={<Whoops404 />} />
+            </Routes>
+          </AnimatePresence>
+         
         </div>
       </>
     )

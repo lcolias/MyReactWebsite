@@ -21,13 +21,14 @@ function Navbar() {
             <Link to='' > lucas colias </Link>
           </div>
 
+          <div className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </div> 
+
           <ul className={toggled ? 'active navbar-link-container' : 'navbar-link-container'}> 
             <li className='navbar-link'><Link to=''         ><FaHome /><div>home</div></Link></li>
             <li className='navbar-link'><Link to='about'    ><FaInfoCircle /><div>about</div></Link></li>
             <li className='navbar-link'><Link to='skills'   ><FaCode /><div>skills</div></Link></li>
             <li className='navbar-link'><Link to='interests'><FaBasketballBall /><div>interests</div></Link></li>
             <li className='navbar-link'><Link to='contact'  ><FaMailBulk /><div>contact</div></Link></li>
-            <li className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </li> 
           </ul>
 
         </nav>

@@ -24,7 +24,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
   	color: whitesmoke;
 	text-decoration: none;
-	
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -99,3 +98,21 @@ code {
 .company:hover::before{
 	width: 100%;
 }
+
+/* Style the horizontal scrollbar */
+body::-webkit-scrollbar {
+	width: 12px; /* Width of the scrollbar */
+	background-color: transparent; /* Set the scrollbar background color to transparent */
+  }
+  
+  /* Style the thumb (the draggable part of the scrollbar) */
+  body::-webkit-scrollbar-thumb {
+	background-color: transparent; /* Set the thumb background color to transparent */
+	border: 1px solid transparent; /* Set the thumb border to transparent */
+	border-radius: 6px; /* Rounded corners for the thumb */
+  }
+  
+  /* Style the track (the non-draggable part of the scrollbar) */
+  body::-webkit-scrollbar-track {
+	background-color: transparent; /* Set the track background color to transparent */
+  }

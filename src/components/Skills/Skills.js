@@ -1,14 +1,20 @@
 import React from "react";
 
-import "./Skills.css";
+import { motion as m } from 'framer-motion';
 
+import "./Skills.css";
 
 import GitHubUserRepos from "../External-Data/GitHubUserRepos";
 
 function Skills(){
 
   return(
-    <>
+    <m.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity:0}}
+      transition={{duration: 0.5, ease:"easeOut"}}
+    >
       
       <div className="skills-page">  
 
@@ -37,7 +43,7 @@ function Skills(){
 
         </section>
       </div>
-    </>
+    </m.div>
   );
 }
 
