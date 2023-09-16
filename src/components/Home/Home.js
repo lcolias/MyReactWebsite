@@ -43,7 +43,7 @@ function Home(props){
             animate={{opacity: 1}}
             exit={{opacity:0}}
             transition={{duration: 1, ease:"easeOut"}}
-
+            className='home'
         >
             {/* intro section: introRef observer reference triggers basic translateX transition animation */}
             <section ref={introRef} className='section-content-container'>

@@ -1,4 +1,10 @@
 /*styles*/
+.home .section-content-container > h1, 
+.home .section-content-container > h2, 
+.home .section-content-container > p{
+    text-align: center;
+}
+
 .project-preview {
     display: flex;
     flex-flow: row wrap;
@@ -28,7 +34,6 @@ a.pg-link {
 a.pg-link:hover {
     transform: scale(1.2); /* Increase the size of the link image on hover */
 }
-
 
 .hob-link{
     margin: 4px;
