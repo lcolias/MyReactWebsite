@@ -21,9 +21,6 @@ Todo list and schedule of personal website functionality.
 
 ### navigation bar
 
-- [ ] V.0.2 style the navigation bar so it minimizes to 3 bars when scrolling on initial landing ONLY, click 3 bars to toggle display links.
-- [ ] V.0.2 style the navigation bar so Link images animate into text on hover and vice versa off hover.
-
 ### other items
 
 - [ ] V.0.2 Update the project tiles to be more refined.(add shadow, spacing identifiers)
@@ -31,10 +28,12 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
-- [ ] V.0.2 add media queries to all CSS for other device sizes.
+- [ ] V.0.2 add media queries for tablet and smartphone sized devices for the landinog page. - [x] Landing section needs to center align text for all screen sizes - [x]Landing skills section flex-direction column under tablet screen size. - [] Project Tiles need to be adjustecd for different screen sizes.
 
 ## Done ✓
 
+- [x] V.0.2 style the navigation bar so it minimizes to 3 bars when scrolling on initial landing ONLY, click 3 bars to toggle display links.
+- [x] V.0.2 style the navigation bar so Link images animate into text on hover and vice versa off hover.
 - [x] V.0.2 Add transition animations to about me content and education content.
 - [x] V.0.2 Add Logo for HighSchool in education section.
 - ---^ 9/1/2023 ^---

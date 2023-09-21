@@ -1,6 +1,6 @@
 .tile-container {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     margin: 16px;
 
     display: flex;
@@ -15,16 +15,22 @@
 
 }
 
+.tech-img-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .tile-container img {
     display: block;
-    margin: 2px auto;
-    height: 40%;
-    width: 40%;
+    margin: auto;
+    height: 75px;
+    width: 75px;
 }
 
 .tile-container h1 {
-    padding: 0;
-    margin: 4px;
+    margin: 8px;
     color: #727272;
     font-size: 1.5rem;
 }
@@ -36,4 +42,13 @@
     font-size: 1.25rem;
 
     text-align: left;
+}
+
+/* On screens that are 960px or less, set the background color to olive */
+@media all and (max-width: 960px) {
+
+}
+/* On screens that are 700px or less, set the background color to olive */
+@media all and (max-width: 700px) {
+
 }
