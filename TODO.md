@@ -28,7 +28,10 @@ Todo list and schedule of personal website functionality.
 
 ## In Progress
 
-- [ ] V.0.2 add media queries for tablet and smartphone sized devices for the landinog page. - [x] Landing section needs to center align text for all screen sizes - [x]Landing skills section flex-direction column under tablet screen size. - [] Project Tiles need to be adjustecd for different screen sizes.
+- [ ] V.0.2 add media queries for tablet and smartphone sized devices for the landinog page:
+  - [x] Landing section needs to center align text for all screen sizes
+  - [x]Landing skills section flex-direction column under tablet screen size.
+  - [] Project Tiles need to be adjustecd for different screen sizes.
 
 ## Done ✓
 

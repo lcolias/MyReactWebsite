@@ -6,7 +6,7 @@ import './Tile.css';
 
 function Tile(props){
 
-    //console.log(projectImagePlaceholder);
+    console.log(props.repo.readme);
 
     return(
         <>
