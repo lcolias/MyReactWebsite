@@ -12,29 +12,41 @@ function GitHubUserRepos(props) {
   useEffect(() => {
     axios.get(`https://api.github.com/users/${props.username}/repos`)
     .then(response => {
+      
+      // stores all repositoryu data into an object array
       let repoData = response.data;
 
       
-
+/*
       if (props.topThree) {
         repoData = repoData.slice(0, 3); // Get only the top three repositories
       }
-
-      const repoPromises = repoData.map(repo => {
-        return axios.get(repo.url + '/readme');
+*/
+      // get all readme files from repos 
+      const readmePromises = repoData.map(repo => {
+        return axios.get(repo.url + '/contents/README.md');
       });
 
+       // get all icon files from repos
+       const iconPromises = repoData.map(repo => {
+        return axios.get(repo.url + '/contents/icons');
+      }); 
       
-      Promise.all(repoPromises)
-      .then(readmeResponses => {
+      // combine all promises into one array
+      const allPromises = [...readmePromises, ...iconPromises];
+    
+      //resolves all promises into a single promise 
+      Promise.all(allPromises)
+      .then(responses => {
+    
         const updatedRepos = repoData.map((repo, index) => {
           return {
             ...repo,
-            readme: readmeResponses[index].data
+            readme: responses[index].data,
+            icons: responses[index + (responses.length/2)].data
+
           };
         });
-
-        console.log(updatedRepos);
 
         setRepos(updatedRepos);
 
@@ -47,7 +59,8 @@ function GitHubUserRepos(props) {
     .catch(error => {
       console.error('Error fetching repositories:', error);
     });
-  }, [props.username, props.topThree]);
+  }, []);
+
 
   return (
     <>
