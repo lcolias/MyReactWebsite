@@ -21,7 +21,7 @@ function Navbar() {
             <Link to='' > lucas colias </Link>
           </div>
 
-          <div className='toggle' onClick={toggle}>  <a href='#'>  {toggled ? <FaTimes /> : <FaBars />}  </a> </div> 
+          <div className='toggle' onClick={toggle}> {toggled ? <FaTimes /> : <FaBars />} </div> 
 
           <ul className={toggled ? 'active navbar-link-container' : 'navbar-link-container'}> 
             <li className='navbar-link'><Link to=''         ><FaHome /><div>home</div></Link></li>

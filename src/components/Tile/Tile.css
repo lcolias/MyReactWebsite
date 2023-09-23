@@ -18,15 +18,15 @@
 .tech-img-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
+    height: 75px;
 }
 
 .tile-container img {
     display: block;
-    margin: auto;
-    height: 75px;
-    width: 75px;
+    margin: 8px;
+    height: 100%;
 }
 
 .tile-container h1 {
@@ -36,10 +36,10 @@
 }
 
 .tile-container p {
-    padding: 0;
-    margin: 4px;
+   
+    margin: 8px;
     color: #727272;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     text-align: left;
 }
