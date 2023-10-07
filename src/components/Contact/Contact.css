@@ -108,6 +108,11 @@ button[type="submit"] {
   /* Add other button styles as needed */
 }
 
+.submit-button:hover {
+  background-color: gray; /* Hover background color */
+
+}
+
 .submit-button:active {
   background-color: #9d2222; /* Background color when button is clicked */
 }
