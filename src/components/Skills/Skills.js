@@ -18,26 +18,22 @@ function Skills(){
       
       <div className="skills-page">  
 
-        <section className="Projects section-content-container">
+        <section className="projects section-content-container">
 
           <h1>projects</h1>
             
-          <GitHubUserRepos username="lcolias" className={`grid`}/>
+          <GitHubUserRepos username="lcolias" className={`repo-grid`}/>
          
         </section>
 
-        <section className="Languages section-content-container">
+        <section className="languages section-content-container">
 
-          <h1>languages | frameworks | technologies</h1>
+          <h1>technologies</h1>
 
           <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>arduino</li>
-            <li>raspberry pi</li>
-            <li>JavaScript</li>
-            <li>React</li>
+            <li>C | C++ | C#</li>
+            <li>HTML | CSS | JavaScript | React</li>
+            <li>arduino | raspberry pi</li>
             <li>Python</li>
           </ul>
 

@@ -2,14 +2,14 @@
     
 }
 
-.grid {
+.repo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
 }
 
-.flex {
+.repo-flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -25,7 +25,7 @@
 
 @media all and (max-width: 700px) {
     
-    .grid {
+    .repo-grid {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;

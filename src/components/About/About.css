@@ -4,17 +4,17 @@ em {
 }
 
 .about-me{
-    width: 95%;
+    
+    width: 90%;
     margin: 24px 16px;
 }
 
 .p-format{
-    flex: 1;
     text-align: justify; 
 }
 
 .education{
-    width: 95%;
+    width: 90%;
     min-height: 95%;
 }
 
@@ -22,22 +22,21 @@ em {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
+   
     
     font-size: 1.25rem;
 }
 
 .school-grid div{
     height: 100%;
-    padding: 8px 0;
+   
     display:flex; 
     flex-direction: column;
     justify-content: center;
     /*border-top: 2px dotted gainsboro;*/
 }
 
-.item {
-    padding: 10px;
-  }
+
   
   /* Add a translucent line after each grid item except the last one */
 .item:not(:last-child)::after {
@@ -51,15 +50,16 @@ em {
   }
 
 .school-img{
+    width: 100%;
     align-items: center;
 }
 
 .img-lg{
-    height: 150px;
+    width: 50%;
 }
 
 .img-sml{
-    height: 100px;
+    width: 90%;
 }
 
 .school-details{
@@ -71,3 +71,63 @@ em {
    margin: 4px;
 }
 
+
+@media all and (max-width: 960px) {
+       
+  
+    
+    .about-me >.section-content-background > h2,
+    .education >.section-content-background > h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .p-format p {
+        font-size: 1rem;
+    }
+
+    .school-details li{
+        font-size: 1rem;
+     }
+
+    .item {
+        width: 90%;
+    }
+  
+}
+
+
+@media all and (max-width: 700px) {
+
+    .about-me {
+
+        min-height: 100vh;
+        width: 80%;
+    }
+
+    .p-format{
+        flex-flow: column wrap;
+    }
+
+    .education{
+        width: 80%;
+        margin-bottom: 32px;
+    }
+
+    .school-grid{
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        place-items: center;
+        font-size: 1.25rem;
+    }
+
+    .school-img{
+        margin: 16px 0;
+    }
+
+    .img-lg{
+        width: 40%;
+    }
+      
+
+}

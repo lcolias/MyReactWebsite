@@ -70,7 +70,7 @@ function Home(props){
                 <h2 className={`hiddens ${skillsInView ? 'show' : 'hide' }`} >my skillz <Link className='pg-link' to='skills'>💻</Link></h2>
 
                 <div className={`project-preview hiddens ${skillsInView ? 'show' : 'hide' }`}>
-                    <GitHubUserRepos username="lcolias" topThree={true} className={`flex`}/>
+                    <GitHubUserRepos username="lcolias" topThree={true} className={`repo-flex`}/>
                 </div>
 
             </section>
