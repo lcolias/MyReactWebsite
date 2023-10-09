@@ -6,8 +6,7 @@
 }
 
 .mailer{
-
-    width: 40%;
+    width: 50%;
 
     text-align: left;
 }
@@ -18,8 +17,16 @@
   }
   
 .info-sec {
-    width: 40%;
-  }
+    width: 50%;
+}
+
+.info-sec > h2,
+.info-sec > p{
+ direction: rtl;
+ text-align: right;
+}
+
+
 
 .divider{
     position: relative;
@@ -58,7 +65,7 @@
 
 .form-field textarea {
   height: 8em;
-  }
+}
 
 .form-field input,
 .form-field textarea {
@@ -115,4 +122,81 @@ button[type="submit"] {
 
 .submit-button:active {
   background-color: #9d2222; /* Background color when button is clicked */
+}
+
+@media all and (max-width: 960px) { 
+  
+
+  .info-sec {
+    width: 40%;
+  }
+  
+  .info-sec > h2 {
+    font-size: 2rem;
+  }
+  
+  .info-sec > p {
+    font-size: 1rem;
+  }
+  
+
+  
+
+}
+
+
+@media all and (max-width: 700px) { 
+
+  .mailer{
+    width: 80%;
+  }
+
+}
+
+@media all and (max-width: 500px) { 
+
+.side-by-side{
+
+  flex-direction: column;
+
+  }
+
+.divider{
+  display: none;
+}
+
+.info-sec{
+  width: 100%;
+}
+
+.info-sec > h2,
+.info-sec > p{
+ direction: ltr;
+ text-align: left;
+}
+
+.form-sec {
+  width: 100%;
+}
+
+.form-sec > form {
+
+  text-align: center;
+
+}
+
+.form-sec > form > .form-field{
+
+  text-align: left;
+
+}
+
+.form-field{
+  margin-bottom: 0.5rem;
+}
+
+.form-field textarea {
+  height: 6em;
+}
+
 }

@@ -49,8 +49,8 @@ function Contact(){
 
             <section className='info-sec '> 
 
-              <h1>contact me</h1>
-              <p>If you'd like to reach out please feel free to get in touch and I will respond as soon as possible!</p>
+              <h2>contact me</h2>
+              <p>If you'd like to reach out please feel free to get in touch and I will respond as soon as possible</p>
               <p>If you prefer to contact me directly, send your Email to: lpcolias@gmail.com</p>
                 
             </section>
