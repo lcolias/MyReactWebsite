@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MyReactWebsite/static/css/main.1620978e.css",
-    "main.js": "/MyReactWebsite/static/js/main.eb9f4a03.js",
+    "main.css": "/MyReactWebsite/static/css/main.42996cc1.css",
+    "main.js": "/MyReactWebsite/static/js/main.c80306cf.js",
     "static/js/787.bbe01249.chunk.js": "/MyReactWebsite/static/js/787.bbe01249.chunk.js",
     "static/media/rubenayala.png": "/MyReactWebsite/static/media/rubenayala.0aa8f674856394b51000.png",
     "static/media/Futura Bold.otf": "/MyReactWebsite/static/media/Futura Bold.b3dd2dcb9b51257052ca.otf",
     "static/media/longBeachLogo.svg": "/MyReactWebsite/static/media/longBeachLogo.2d63c18d3fa60ef6465f469a37be1662.svg",
     "index.html": "/MyReactWebsite/index.html",
-    "main.1620978e.css.map": "/MyReactWebsite/static/css/main.1620978e.css.map",
-    "main.eb9f4a03.js.map": "/MyReactWebsite/static/js/main.eb9f4a03.js.map",
+    "main.42996cc1.css.map": "/MyReactWebsite/static/css/main.42996cc1.css.map",
+    "main.c80306cf.js.map": "/MyReactWebsite/static/js/main.c80306cf.js.map",
     "787.bbe01249.chunk.js.map": "/MyReactWebsite/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1620978e.css",
-    "static/js/main.eb9f4a03.js"
+    "static/css/main.42996cc1.css",
+    "static/js/main.c80306cf.js"
   ]
 }
