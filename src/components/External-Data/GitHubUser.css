@@ -86,14 +86,13 @@ em {
     
     .item-flex-3{
         
-        flex: 0.1 0 100%;
+        flex: 0 0 100%;
         
     }
 
-
     .info{
-        
-        font-size: 1.2rem;
+        gap: 8px;
+        font-size: 1.1rem;
     }
     
 
