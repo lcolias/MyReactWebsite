@@ -80,7 +80,7 @@
     }
 
     .navbar-logo {
-        font-size: 3em;
+        
     }
     
     .toggle {
@@ -99,7 +99,7 @@
         flex-direction: column; 
         
         margin: 8px 0;
-        background-color: rgba(128, 128, 128, 0.5);
+        background-color: rgba(69, 69, 69, 0.69);
         border-radius: 8px;
 
         font-size: 1.75em;
@@ -117,7 +117,7 @@
         align-items: center; /* Vertically center */
         text-align: center;
         
-        min-height: 18vh;
+    
         width: 80%;
         margin: 0;
         
@@ -136,7 +136,7 @@
         justify-content: center; /* Horizontally center */
         align-items: center; /* Vertically center */
         text-align: center;
-        min-height: 18vh;
+        min-height: 17vh;
         width: 100%;
     }
 
@@ -149,5 +149,21 @@
   
 /* On screens that are 700px or less, set the background color to olive */
 @media all and (max-width: 700px) {
+    
+    .navbar-logo a{
+        display: none;
+    }
+
+    .navbar-logo::after{
+        content: ' l.c. ';
+    }
+
+
+
+    .active .navbar-link a{
+        
+        min-height: 16vh;
+        
+    }
 
 }
